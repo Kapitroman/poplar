@@ -138,18 +138,23 @@ block main
 
       section(id="buttons")
         h2 Buttons
-        +btn({text: "Текст", href: "#"})
-        p Пример вызова
-        code
-          pre +btn({text: "Текст", href: "#"})
-        +btn({text: "Текст", href: "#", isExternal: true})(aria-label="Просто ссылка").btn--red
-        p Пример вызова
-        code
-          pre +btn({text: "Я красная ссылка", href: "#", isExternal: true})(aria-label="Просто ссылка").btn--red
-        +btn({text: "Текст"})(disabled)
-        p Пример вызова
-        code
-          pre +btn({text: "Текст"})(disabled)
+          h3 Основная кнопка
+          +btn({text: "Текст", href: "#"})
+          p Пример вызова
+          code
+            pre +btn({text: "Текст", href: "#"})
+
+          h3 Ссылка как кнопка
+          +btn({text: "Текст", href: "#", isExternal: true})(aria-label="Просто ссылка").btn--red
+          p Пример вызова
+          code
+            pre +btn({text: "Я красная ссылка", href: "#", isExternal: true})(aria-label="Просто ссылка").btn--red
+
+          h3 Заблокированная кнопка
+          +btn({text: "Текст"})(disabled)
+          p Пример вызова
+          code
+            pre +btn({text: "Текст"})(disabled)
 
       section(id="form-elements")
         h2 Form elements
