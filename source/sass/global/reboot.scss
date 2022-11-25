@@ -127,3 +127,10 @@ button,
 [type="submit"] {
   appearance: none;
 }
+
+.btn-reset {
+  padding: 0;
+  border: none;
+
+  background-color: $color-transparent;
+}

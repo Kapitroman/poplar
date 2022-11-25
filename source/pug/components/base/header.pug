@@ -3,34 +3,53 @@ mixin header(headerMods, currentUrl)
     const headerLinks = [
       {
         href: "index.html",
-        text: "Главная"
+        text: "Home"
       },
       {
-        href: "#",
-        text: "Страница 2"
+        href: "about.html",
+        text: "About"
       },
       {
-        href: "#",
-        text: "Страница 3"
+        href: "product.html",
+        text: "Product"
+      },
+      {
+        href: "solution.html",
+        text: "Solutions"
+      },
+      {
+        href: "pricing.html",
+        text: "Pricing"
       },
     ]
 
   header.header(class=headerMods)
     .container
-      if(currentUrl === "index.html")
-        //- lighthouse снимает 10 баллов SEO за <a> без href
-        span.header__logo Логотип
-      else
-        a.header__logo(href="index.html", aria-label="Переход на главную") Логотип
-      nav.main-nav
-        button.main-nav__toggle.btn-reset(type="button", aria-label="Переключатель отображения меню", aria-pressed="false")
-          +icon("icon-burger", 20, 20)
-        .main-nav__wrapper
+      .header__wrapper
+        .header__panel
+          if(currentUrl === "index.html")
+            //- lighthouse снимает 10 баллов SEO за <a> без href
+            .logo
+              span.visually-hidden Logo Poplar
+              +icon("icon-logo", 180, 72)
+          else
+            a.logo(href="index.html", aria-label="go on mainpage")
+              span.visually-hidden Logo Poplar
+              +icon("icon-logo", 180, 72)
+          button.menu-toggle.btn-reset(type="button", aria-label="toggle view menu", aria-pressed="false")
+            span.menu-toggle__line.menu-toggle__line--top
+            span.menu-toggle__line.menu-toggle__line--center
+            span.menu-toggle__line.menu-toggle__line--bottom
+        nav.main-nav
           ul.main-nav__list
-            each link in headerLinks
-              - const activeState = currentUrl === link.href
-              li.main-nav__item
-                if(activeState)
-                  span.main-nav__link.is-active=link.text
-                else
-                  a.main-nav__link(href=link.href)=link.text
+              each link in headerLinks
+                - const activeState = currentUrl === link.href
+                li.main-nav__item
+                  if(activeState)
+                    span.main-nav__link.is-active=link.text
+                  else
+                    a.main-nav__link(href=link.href)=link.text
+          +btn({
+            href: "#",
+            text: "Try for Free"
+          }).header__button

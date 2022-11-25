@@ -1,0 +1,13 @@
+.logo {
+  svg {
+    display: block;
+
+    width: 180px;
+    height: 72px;
+
+    @include vp-767 {
+      width: 100px;
+      height: 49px;
+    }
+  }
+}
