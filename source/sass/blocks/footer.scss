@@ -1,5 +1,168 @@
 .footer {
-  padding: 40px 0;
+  padding: 90px 0 84px 0;
 
-  background-color: $color-neon-blue;
+  color: $color-mischka;
+
+  background-color: $color-blue-whale-2;
+
+  @include vp-767 {
+    padding: 50px 0 25px 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @include vp-767 {
+      flex-direction: column;
+      justify-content: initial;
+
+      max-width: 390px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @include vp-479 {
+      max-width: 280px;
+    }
+  }
+
+  &__poplar {
+    width: 390px;
+
+    @include vp-767 {
+      order: 1;
+    }
+
+    @include vp-479 {
+      width: 100%;
+    }
+  }
+
+  .logo {
+    margin-bottom: 35px;
+
+    @include vp-767 {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 30px;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    @include vp-479 {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  &__social-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 23px;
+    align-items: center;
+
+    margin: 0;
+    margin-bottom: 35px;
+    padding: 0;
+
+    list-style: none;
+
+    @include vp-767 {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__social-link {
+    display: block;
+
+    transition: opacity $trans-default;
+
+    @include hover-focus {
+      opacity: 0.8;
+    }
+  }
+
+  &__copyright {
+    margin: 0;
+
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+
+    width: 375px;
+    margin-left: 60px;
+
+    @include vp-767 {
+      margin-bottom: 78px;
+      margin-left: 0;
+    }
+
+    @include vp-479 {
+      width: 100%;
+    }
+  }
+
+  &__menu-column {
+    width: 130px;
+
+    @include vp-479 {
+      width: 115px;
+    }
+  }
+
+  .footer__menu-column + .footer__menu-column {
+    margin-left: 30px;
+  }
+
+  &__menu-column-title {
+    margin: 0;
+    margin-bottom: 50px;
+
+    color: $color-default-white;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 600;
+
+    @include vp-767 {
+      margin-bottom: 40px;
+    }
+
+    @include vp-479 {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+
+  &__menu-column-link {
+    display: block;
+
+    color: $color-mischka;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+
+    transition: opacity $trans-default;
+
+    @include vp-479 {
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    @include hover-focus {
+      opacity: 0.8;
+    }
+  }
+
+  .footer__menu-column-link + .footer__menu-column-link {
+    margin-top: 26px;
+  }
 }

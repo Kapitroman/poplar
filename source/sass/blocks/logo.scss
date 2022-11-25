@@ -1,7 +1,20 @@
 .logo {
+  display: inline-block;
+
+  color: $color-default-white;
+
   svg {
     display: block;
 
+    width: 151px;
+    height: 60px;
+
+    transition: color $trans-default;
+  }
+}
+
+.logo.logo--header {
+  svg {
     width: 180px;
     height: 72px;
 
@@ -9,5 +22,13 @@
       width: 100px;
       height: 40px;
     }
+  }
+}
+
+[href].logo {
+  transition: opacity $trans-default;
+
+  @include hover-focus {
+    opacity: 0.8;
   }
 }

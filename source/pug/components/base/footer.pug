@@ -1,3 +1,50 @@
 mixin footer(footerMods)
   footer.footer(class=footerMods)
     .container
+      .footer__wrapper
+        .footer__poplar
+          if(currentUrl === "index.html")
+            .logo
+              span.visually-hidden Logo Poplar
+              +icon("icon-logo", 151, 60)
+          else
+            a.logo(href="index.html", aria-label="go on mainpage")
+              span.visually-hidden Logo Poplar
+              +icon("icon-logo", 151, 60)
+          p.footer__text
+            | Most business owners have no idea what to do with the extra cash in their business.
+          ul.footer__social-list
+            li.footer__social-item
+              a.footer__social-link(href="#")
+                span.visually-hidden Google
+                +icon("icon-google", 18, 21)
+            li.footer__social-item
+              a.footer__social-link(href="#")
+                span.visually-hidden Google
+                +icon("icon-twitter", 18, 21)
+            li.footer__social-item
+              a.footer__social-link(href="#")
+                span.visually-hidden Google
+                +icon("icon-instagram", 16, 21)
+            li.footer__social-item
+              a.footer__social-link(href="#")
+                span.visually-hidden Google
+                +icon("icon-linkedin", 16, 21)
+            li.footer__social-item
+              a.footer__social-link(href="#")
+                span.visually-hidden Google
+                +icon("icon-youtube", 21, 21)
+          p.footer__copyright Copyright © Poplar 2022
+        .footer__menu
+          .footer__menu-column
+            p.footer__menu-column-title Company
+            a.footer__menu-column-link(href="#") About
+            a.footer__menu-column-link(href="#") Terms
+            a.footer__menu-column-link(href="#") Privacy Policy
+            a.footer__menu-column-link(href="#") Careers
+          .footer__menu-column
+            p.footer__menu-column-title More
+            a.footer__menu-column-link(href="#") Documentation
+            a.footer__menu-column-link(href="#") License
+            a.footer__menu-column-link(href="#") Changelog
+

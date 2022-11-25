@@ -29,7 +29,7 @@ mixin header(headerMods, currentUrl)
         .header__panel
           if(currentUrl === "index.html")
             //- lighthouse снимает 10 баллов SEO за <a> без href
-            .logo
+            .logo.logo--header
               span.visually-hidden Logo Poplar
               +icon("icon-logo", 180, 72)
           else
