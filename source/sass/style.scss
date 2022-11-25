@@ -30,13 +30,17 @@
 @import "blocks/custom-select";
 
 // components
+// ---------------------------------
 
 @import "blocks/logo";
 @import "blocks/menu-toggle";
+@import "blocks/intro";
+@import "blocks/check-point";
 
+// sections
 // ---------------------------------
 
-// ---------------------------------
+@import "blocks/inflation-proof-cash";
 
 // ❗❗❗ запрещено использовать изображения в css, касается как jpg \ png, так и svg
 

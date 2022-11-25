@@ -1,0 +1,37 @@
+.check-point {
+  position: relative;
+
+  width: 35px;
+  height: 35px;
+  border-radius: 12px;
+
+  background-color: $color-arapawa;
+
+  @include vp-767 {
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 14px;
+
+    width: 8px;
+    height: 14px;
+    border: solid $color-mountain-meadow;
+    border-width: 0 2px 2px 0;
+
+    transform: rotate(45deg);
+
+    @include vp-767 {
+      top: 4px;
+      left: 8px;
+
+      width: 5px;
+      height: 10px;
+    }
+  }
+}
