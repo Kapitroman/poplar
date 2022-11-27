@@ -1,11 +1,7 @@
 .inflation-proof-cash {
-  padding-top: 49px;
-
   background: linear-gradient(to bottom, $color-blue-whale-2 67%, $color-default-white 67%);
 
   @include vp-767 {
-    padding-top: 101px;
-
     background: linear-gradient(to bottom, $color-blue-whale-2 82%, $color-default-white 82%);
   }
 

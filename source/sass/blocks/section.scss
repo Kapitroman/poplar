@@ -1,0 +1,33 @@
+.section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+
+  @include vp-767 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.section--light-dark {
+  padding-bottom: 0;
+
+  @include vp-767 {
+    padding-bottom: 0;
+  }
+}
+
+.section--light + .section--light {
+  padding-top: 0;
+
+  @include vp-767 {
+    padding-bottom: 0;
+  }
+}
+
+.section--intro {
+  padding-top: 70px;
+
+  @include vp-767 {
+    padding-top: 150px;
+  }
+}
