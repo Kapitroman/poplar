@@ -16,14 +16,6 @@
     @include vp-767 {
       flex-direction: column;
       justify-content: initial;
-
-      max-width: 390px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    @include vp-479 {
-      max-width: 280px;
     }
   }
 
@@ -32,9 +24,6 @@
 
     @include vp-767 {
       order: 1;
-    }
-
-    @include vp-479 {
       width: 100%;
     }
   }
@@ -54,7 +43,7 @@
     font-size: 16px;
     font-weight: 500;
 
-    @include vp-479 {
+    @include vp-767 {
       font-size: 14px;
       line-height: 20px;
     }
@@ -102,19 +91,16 @@
     margin-left: 60px;
 
     @include vp-767 {
+      width: 100%;
       margin-bottom: 78px;
       margin-left: 0;
-    }
-
-    @include vp-479 {
-      width: 100%;
     }
   }
 
   &__menu-column {
     width: 130px;
 
-    @include vp-479 {
+    @include vp-767 {
       width: 115px;
     }
   }
@@ -134,9 +120,7 @@
 
     @include vp-767 {
       margin-bottom: 40px;
-    }
 
-    @include vp-479 {
       font-size: 18px;
       line-height: 22px;
     }
@@ -152,7 +136,7 @@
 
     transition: opacity $trans-default;
 
-    @include vp-479 {
+    @include vp-767 {
       font-size: 14px;
       line-height: 17px;
     }

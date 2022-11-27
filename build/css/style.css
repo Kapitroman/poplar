@@ -1859,8 +1859,6 @@ button,
   max-width: 1010px;
   margin: 0;
   margin-bottom: 35px;
-  margin-left: auto;
-  margin-right: auto;
   padding-left: 0;
   list-style: none;
   font-weight: 500;
@@ -1962,7 +1960,7 @@ button,
 
 @media (max-width: 767px) {
   .container {
-    padding: 0 20px;
+    padding: 0 139px;
   }
 
   .header {
@@ -2074,19 +2072,22 @@ button,
     -webkit-box-pack: initial;
     -ms-flex-pack: initial;
     justify-content: initial;
-    max-width: 390px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .footer__poplar {
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
+    width: 100%;
   }
 
   .footer .logo {
     margin-bottom: 30px;
+  }
+
+  .footer__text {
+    font-size: 14px;
+    line-height: 20px;
   }
 
   .footer__social-list {
@@ -2094,12 +2095,24 @@ button,
   }
 
   .footer__menu {
+    width: 100%;
     margin-bottom: 78px;
     margin-left: 0;
   }
 
+  .footer__menu-column {
+    width: 115px;
+  }
+
   .footer__menu-column-title {
     margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .footer__menu-column-link {
+    font-size: 14px;
+    line-height: 17px;
   }
 
   .modal__wrapper {
@@ -2189,7 +2202,6 @@ button,
   }
 
   .inflation-proof-cash .intro {
-    max-width: 360px;
     margin-bottom: 20px;
   }
 
@@ -2202,7 +2214,6 @@ button,
     -moz-column-gap: initial;
     column-gap: initial;
     row-gap: 6px;
-    max-width: 280px;
     margin-bottom: 24px;
     font-size: 12px;
   }
@@ -2280,35 +2291,8 @@ button,
 }
 
 @media (max-width: 479px) {
-  .footer__wrapper {
-    max-width: 280px;
-  }
-
-  .footer__poplar {
-    width: 100%;
-  }
-
-  .footer__text {
-    font-size: 14px;
-    line-height: 20px;
-  }
-
-  .footer__menu {
-    width: 100%;
-  }
-
-  .footer__menu-column {
-    width: 115px;
-  }
-
-  .footer__menu-column-title {
-    font-size: 18px;
-    line-height: 22px;
-  }
-
-  .footer__menu-column-link {
-    font-size: 14px;
-    line-height: 17px;
+  .container {
+    padding: 0 20px;
   }
 
   .inflation-proof-cash .intro {
@@ -2317,10 +2301,6 @@ button,
 }
 
 @media (max-width: 374px) {
-  .container {
-    padding: 0 20px;
-  }
-
   .inflation-proof-cash {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(88%, #133249), color-stop(88%, #ffffff));
     background: -o-linear-gradient(top, #133249 88%, #ffffff 88%);
