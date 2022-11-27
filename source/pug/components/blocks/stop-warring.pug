@@ -1,0 +1,25 @@
+mixin stop-warring(screen)
+  if screen
+    section.stop-warring.section.section--light-dark
+      .container
+        .stop-warring__wrapper-head-section
+          .stop-warring__wrapper-head
+            h2.section__title-h2 Stop Worrying About <span>Your Cash</span>
+            p.section__subtitle No need to bleed money as your cash loses value. Poplar can put your money to work.
+          +btn({
+            href: "#",
+            text: "Open a free account"
+          })
+        .stop-warring__screen
+          +picture("content/screens", "screen-dashboard", "png", 1168, 736, "screen app")
+  else
+    section.stop-warring.stop-warring--not-screen.section.section--dark
+      .container
+        .stop-warring__wrapper-head-section
+          .stop-warring__wrapper-head
+            h2.section__title-h2 Stop Worrying About <span>Your Cash</span>
+            p.section__subtitle No need to bleed money as your cash loses value. Poplar can put your money to work.
+          +btn({
+            href: "#",
+            text: "Open a free account"
+          })
