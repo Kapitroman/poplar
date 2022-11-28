@@ -1776,6 +1776,7 @@ button,
   font-weight: 400;
   line-height: 50px;
   color: #ffffff;
+  text-transform: capitalize;
 }
 
 .intro__title span {
@@ -1791,21 +1792,6 @@ button,
   line-height: 15px;
   color: #ffffff;
 }
-
-/*
-.intro--left {
-  margin-left: 0;
-  align-items: flex-start;
-
-  .intro__title {
-    text-align: left;
-  }
-
-  .intro__subtitle {
-    text-align: left;
-  }
-}
-*/
 
 .check-point {
   position: relative;
@@ -1841,6 +1827,7 @@ button,
   font-weight: 400;
   line-height: 56px;
   color: #123149;
+  text-transform: capitalize;
 }
 
 .section__title-h2 span {
@@ -1854,6 +1841,7 @@ button,
   font-weight: 400;
   line-height: 44px;
   color: #123149;
+  text-transform: capitalize;
 }
 
 .section__title-h3 span {
@@ -2113,6 +2101,57 @@ button,
   height: 71px;
 }
 
+.software-service {
+  background-color: #133249;
+}
+
+.software-service__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.software-service__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: calc((100% - 40px) / 2);
+  padding: 5.08%;
+  border-radius: 60px;
+  background-color: #f3f6fa;
+  font-family: "Arbutus Slab", "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 38px;
+  text-transform: capitalize;
+}
+
+.software-service__item svg {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  margin-right: 50px;
+}
+
+.software-service__item span {
+  color: #0ecb78;
+}
+
+.software-service__item:first-child span {
+  color: #e52a57;
+}
+
+.software-service__item-text {
+  margin: 0;
+}
+
+.software-service .software-service__item + .software-service__item {
+  margin-left: 40px;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -2173,6 +2212,20 @@ button,
 
   .header {
     padding: 50px 0;
+  }
+
+  .software-service__item {
+    padding: 30px 20px;
+    border-radius: 30px;
+    min-height: 140px;
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .software-service__item svg {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
   }
 }
 
@@ -2558,6 +2611,22 @@ button,
   .inflation-value .section__icons svg:last-child {
     width: 25px;
     height: 25px;
+  }
+
+  .software-service__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .software-service__item {
+    width: 100%;
+  }
+
+  .software-service .software-service__item + .software-service__item {
+    margin-left: 0;
+    margin-top: 20px;
   }
 }
 

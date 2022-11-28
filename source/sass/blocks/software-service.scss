@@ -1,0 +1,80 @@
+.software-service {
+  background-color: $color-blue-whale-2;
+
+  &__wrapper {
+    display: flex;
+
+    @include vp-767 {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    width: calc((100% - 40px) / 2);
+    padding: 5.08%;
+    border-radius: 60px;
+
+    background-color: $color-alice-blue;
+
+    font-family: $ff-arbutus;
+    font-size: 30px;
+    line-height: 38px;
+    text-transform: capitalize;
+
+    @include vp-1023 {
+      //padding: 10.71%;
+      padding: 30px 20px;
+      border-radius: 30px;
+      min-height: 140px;
+
+      font-size: 18px;
+      line-height: 23px;
+    }
+
+    @include vp-767 {
+      width: 100%;
+    }
+
+    svg {
+      flex-shrink: 0;
+
+      width: 80px;
+      height: 80px;
+      margin-right: 50px;
+
+      @include vp-1023 {
+        //width: calc((100% - 20px) * 30 / 200);
+        //height: calc((100% - 20px) * 30 / 200);
+        width: 30px;
+        height: 30px;
+        margin-right: 20px;
+      }
+    }
+
+    span {
+      color: $color-mountain-meadow;
+    }
+  }
+
+  &__item:first-child {
+    span {
+      color: $color-amaranth;
+    }
+  }
+
+  &__item-text {
+    margin: 0;
+  }
+
+  .software-service__item + .software-service__item {
+    margin-left: 40px;
+
+    @include vp-767 {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
+}
