@@ -1,0 +1,21 @@
+mixin inflation-value()
+  .inflation-value.section
+    .container
+      .center
+        .section__icons
+          +icon("icon-eat", 51, 57)
+          .section__icons-dots
+            span
+            span
+            span
+          +icon("icon-money", 71, 71)
+        .section__title-h2 Don’t Let Inflation Eat The <span>Value</span> Of <span>Your Money</span>
+        .section__subtitle
+          | You shouldn’t have to worry about your ‘idle cash’the money
+          | sitting in your business bank accounts that you don’t immediately need.
+        .section__subtitle
+          | You should be able to make returns on that cash without any extra risk or work.
+        +btn({
+          href: "#",
+          text: "Open a free account"
+        })
