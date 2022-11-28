@@ -2068,6 +2068,11 @@ button,
   margin-right: 80px;
 }
 
+.stop-warring .btn {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
 .stop-warring__screen {
   border-radius: 35px;
   aspect-ratio: 1180/750;
@@ -2521,6 +2526,30 @@ button,
     margin-right: 10px;
   }
 
+  .stop-warring {
+    padding-bottom: 0;
+  }
+
+  .stop-warring__wrapper-head-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .stop-warring__wrapper-head {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .stop-warring .section__title-h2 + .section__subtitle {
+    margin-top: 15px;
+  }
+
+  .stop-warring--not-screen .stop-warring__wrapper-head-section {
+    padding-bottom: 50px;
+  }
+
   .inflation-value .section__icons svg:first-child {
     width: 18px;
     height: 20px;
@@ -2602,6 +2631,10 @@ button,
 
   .inflation-proof-cash .intro {
     max-width: 280px;
+  }
+
+  .stop-warring .section__title-h2 {
+    max-width: 207px;
   }
 
   .inflation-value .section__title-h2 {
