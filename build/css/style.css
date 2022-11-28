@@ -1939,16 +1939,6 @@ button,
   color: #ffffff;
 }
 
-/*
-.section--light + .section--light {
-  padding-top: 0;
-
-  @include vp-767 {
-    padding-bottom: 0;
-  }
-}
-*/
-
 .section--intro {
   padding-top: 70px;
 }
@@ -2106,6 +2096,16 @@ button,
 
 .inflation-value .center {
   max-width: 568px;
+}
+
+.inflation-value .section__icons svg:first-child {
+  width: 51px;
+  height: 57px;
+}
+
+.inflation-value .section__icons svg:last-child {
+  width: 71px;
+  height: 71px;
 }
 
 /* @mixin hover-focus {
@@ -2412,12 +2412,82 @@ button,
     padding-bottom: 50px;
   }
 
+  .section__title-h2 {
+    font-size: 25px;
+    line-height: 31px;
+  }
+
+  .section__title-h3 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .section__subtitle {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .section__subtitle-upper {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .section__icons-dots {
+    margin-right: 11px;
+    margin-left: 11px;
+  }
+
+  .section__icons-dots span {
+    width: 2px;
+    height: 2px;
+  }
+
+  .section__icons-dots span + span {
+    margin-left: 3px;
+  }
+
+  .section .section__icons--vertical__icons-dots {
+    margin-top: 12px;
+  }
+
+  .section .section__icons--vertical__icons-dots span + span {
+    margin-top: 3px;
+  }
+
   .section--light-dark {
     padding-bottom: 0;
   }
 
   .section--intro {
     padding-top: 150px;
+  }
+
+  .section__icons + .section__title-h2 {
+    margin-top: 20px;
+  }
+
+  .content + .section__title-h2 {
+    margin-top: 50px;
+  }
+
+  .section__title-h2 + .content {
+    margin-top: 30px;
+  }
+
+  .section__title-h2 + .section__subtitle {
+    margin-top: 15px;
+  }
+
+  .section__subtitle + .section__subtitle {
+    margin-top: 20px;
+  }
+
+  .section__subtitle + .btn {
+    margin-top: 30px;
+  }
+
+  .content + .btn {
+    margin-top: 40px;
   }
 
   .inflation-proof-cash {
@@ -2449,6 +2519,16 @@ button,
 
   .inflation-proof-cash__feature-item .check-point {
     margin-right: 10px;
+  }
+
+  .inflation-value .section__icons svg:first-child {
+    width: 18px;
+    height: 20px;
+  }
+
+  .inflation-value .section__icons svg:last-child {
+    width: 25px;
+    height: 25px;
   }
 }
 
@@ -2522,6 +2602,12 @@ button,
 
   .inflation-proof-cash .intro {
     max-width: 280px;
+  }
+
+  .inflation-value .section__title-h2 {
+    max-width: 236px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
