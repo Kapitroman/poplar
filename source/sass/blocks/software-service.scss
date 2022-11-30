@@ -25,7 +25,6 @@
     text-transform: capitalize;
 
     @include vp-1023 {
-      //padding: 10.71%;
       padding: 30px 20px;
       border-radius: 30px;
       min-height: 140px;
@@ -46,8 +45,6 @@
       margin-right: 50px;
 
       @include vp-1023 {
-        //width: calc((100% - 20px) * 30 / 200);
-        //height: calc((100% - 20px) * 30 / 200);
         width: 30px;
         height: 30px;
         margin-right: 20px;

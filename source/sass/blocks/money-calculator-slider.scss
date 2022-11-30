@@ -1,0 +1,94 @@
+.money-calculator-slider {
+  margin-bottom: 78px;
+
+  .noUi-target.noUi-ltr.noUi-horizontal.noUi-txt-dir-ltr {
+    border-radius: 60px;
+    border: none;
+    height: 6px;
+
+    box-shadow: 0;
+    background-color: $color-pattens-blue;
+
+    .noUi-connect {
+      background-color: $color-mountain-meadow;
+    }
+  }
+
+  .noUi-handle.noUi-handle-lower {
+    right: -12px;
+    top: -10px;
+
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 5px solid $color-mountain-meadow;
+
+    background-color: $color-default-white;
+    box-shadow: none;
+
+    cursor: pointer;
+
+    transition: opacity $trans-default;
+
+    @include hover-focus {
+      opacity: 0.8;
+    }
+
+    &::after {
+      display: none;
+    }
+
+    &::before {
+      display: none;
+    }
+
+    .noUi-tooltip {
+      border: none;
+      padding: 0;
+
+      font-size: 22px;
+      font-weight: 600;
+      color: $color-arapawa;
+
+      background-color: $color-transparent;
+
+      transform: translate(-50%, -20px);
+
+      @include vp-767 {
+        font-size: 14px;
+
+        transform: translate(-50%, -10px);
+      }
+    }
+  }
+
+  .noUi-pips.noUi-pips-horizontal {
+    padding: 20px 0 0 0;
+    height: auto;
+  }
+
+  .noUi-value.noUi-value-horizontal.noUi-value-large {
+    font-size: 22px;
+    font-weight: 600;
+
+    @include vp-767 {
+      font-size: 14px;
+    }
+  }
+
+  .noUi-value.noUi-value-horizontal.noUi-value-large[data-value="10"] {
+    color: $color-arapawa;
+
+    transform: none;
+  }
+
+  .noUi-value.noUi-value-horizontal.noUi-value-large[data-value="500"] {
+    color: $color-arapawa;
+
+    transform: translateX(-100%);
+  }
+
+  .noUi-marker.noUi-marker-horizontal {
+    display: none;
+  }
+}

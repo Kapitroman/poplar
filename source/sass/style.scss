@@ -3,7 +3,9 @@
 
 @import "vendor/normalize";
 // Swiper 7.4.1
-// @import "vendor/swiper";
+@import "vendor/swiper";
+
+@import "../../node_modules/nouislider/dist/nouislider";
 
 // Global
 // ---------------------------------
@@ -38,6 +40,10 @@
 @import "blocks/check-point";
 @import "blocks/section";
 @import "blocks/center";
+@import "blocks/money-calculation-with-polar";
+@import "blocks/money-calculator-slider";
+@import "blocks/momey-calculator-periods";
+@import "blocks/money-calculator-item";
 
 // sections
 // ---------------------------------
@@ -46,6 +52,8 @@
 @import "blocks/stop-warring";
 @import "blocks/inflation-value";
 @import "blocks/software-service";
+@import "blocks/earn-more-with-poplar";
+@import "blocks/how";
 
 // ❗❗❗ запрещено использовать изображения в css, касается как jpg \ png, так и svg
 

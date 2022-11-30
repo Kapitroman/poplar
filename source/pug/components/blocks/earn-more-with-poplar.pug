@@ -1,0 +1,107 @@
+mixin earn-more-with-poplar()
+  section.section.earn-more-with-poplar
+    .container
+      .center
+        .section__icons.section__icons--vertical
+          +icon("icon-earn", 70, 67)
+          .section__icons-dots
+            span
+            span
+            span
+        .section__title-h2 <span>Earn More</span> with poplar
+        .section__subtitle.section__subtitle--upper
+          | See how Poplar can activate your idle money
+      .money-calculation-with-polar
+        p.money-calculation-with-polar__text Select the amount of idle cash you want to deposit, and your earning period:
+        .money-calculation-with-polar__incoming-data
+          .money-calculator-slider
+            div(id="slider-amount-cash")
+          .momey-calculator-periods.swiper
+            .momey-calculator-periods__list.swiper-wrapper
+              label(tabindex="0").swiper-slide
+                input(type="radio", name="period", value="1 Month" tabindex="-1").visually-hidden
+                span 1 Month
+              label(tabindex="0").swiper-slide
+                input(type="radio", name="period", value="12 Months" checked tabindex="-1").visually-hidden
+                span 12 Months
+              label(tabindex="0").swiper-slide
+                input(type="radio", name="period", value="24 Months" tabindex="-1").visually-hidden
+                span 24 Months
+              label(tabindex="0").swiper-slide
+                input(type="radio", name="period", value="36 Months" tabindex="-1").visually-hidden
+                span 36 Months
+        .money-calculation-with-polar__output-data
+          .money-calculator-item
+            p.money-calculator-item__title Payment<br> Accounts
+            .money-calculator-item__features
+              .money-calculator-item__feature
+                p.money-calculator-item__key In 12 months you will have
+                p.money-calculator-item__value.money-calculator-item__value--amount $70,000
+              .money-calculator-item__feature
+                p.money-calculator-item__key APY
+                p.money-calculator-item__value 1%
+              .money-calculator-item__feature
+                p.money-calculator-item__key Automated
+                p.money-calculator-item__value NO
+              .money-calculator-item__feature
+                p.money-calculator-item__key Withdrawl Limits
+                p.money-calculator-item__value Yes
+          .money-calculator-item.money-calculator-item--poplar
+            .money-calculator-item__title
+              .logo
+                span.visually-hidden Logo Poplar
+                +icon("icon-logo", 204, 81)
+            .money-calculator-item__features
+              .money-calculator-item__feature
+                p.money-calculator-item__key In 12 months you will have
+                p.money-calculator-item__value.money-calculator-item__value--amount $520,000.20
+              .money-calculator-item__feature
+                p.money-calculator-item__key APY
+                p.money-calculator-item__value 80%
+              .money-calculator-item__feature
+                p.money-calculator-item__key Automated
+                p.money-calculator-item__value YES
+              .money-calculator-item__feature
+                p.money-calculator-item__key Withdrawl Limits
+                p.money-calculator-item__value None
+          .money-calculator-item
+            p.money-calculator-item__title Traditional Savings<br> Account
+            .money-calculator-item__features
+              .money-calculator-item__feature
+                p.money-calculator-item__key In 12 months you will have
+                p.money-calculator-item__value.money-calculator-item__value--amount $100,030
+              .money-calculator-item__feature
+                p.money-calculator-item__key APY
+                p.money-calculator-item__value 3%
+              .money-calculator-item__feature
+                p.money-calculator-item__key Automated
+                p.money-calculator-item__value NO
+              .money-calculator-item__feature
+                p.money-calculator-item__key Withdrawl Limits
+                p.money-calculator-item__value 6 per month
+        p.money-calculation-with-polar__note.center
+          | 3 bps (basis points) is calculated using theFDIC average National Deposit Rate for checking accounts of 0.03.
+          a(href="http://www.fdic.gov/resources/bankers/national-rates/index.html") www.fdic.gov/resources/bankers/national-rates/index.html
+      .how
+        h2.section__title-h2 How?
+        .how__list-items
+          .how__item
+            .how__item-icon
+              +icon("icon-traditional", 70, 65)
+            p.how__item-text Traditional Private&nbsp;Lending
+          .how__item
+            .how__item-icon
+              +icon("icon-decentralized", 70, 70)
+            p.how__item-text Decentralized Finance
+          .how__item
+            .how__item-icon
+              +icon("icon-accounts", 75, 56)
+            p.how__item-text Bank accounts
+          .how__item
+            .how__item-icon
+              +icon("icon-bonds", 70, 70)
+            p.how__item-text Bonds
+        +btn({
+          href: "#",
+          text: "and More..."
+        })

@@ -59,7 +59,7 @@
     }
   }
 
-  &__subtitle-upper {
+  &__subtitle--upper {
     margin: 0;
 
     font-family: $ff-montserrat;
@@ -115,7 +115,7 @@
   .section__icons--vertical {
     flex-direction: column;
 
-    &__icons-dots {
+    .section__icons-dots {
       flex-direction: column;
 
       margin-top: 30px;
@@ -172,7 +172,7 @@
   }
 }
 
-.content + .section__title-h2 {
+.content + .section__title-h2 {//
   margin-top: 80px;
 
   @include vp-767 {
@@ -180,7 +180,7 @@
   }
 }
 
-.section__title-h2 + .content {
+.section__title-h2 + .content {//
   margin-top: 80px;
 
   @include vp-767 {
@@ -188,7 +188,7 @@
   }
 }
 
-.section__subtitle + .content {
+.section__subtitle + .content {//
   margin-top: 60px;
 }
 
@@ -208,6 +208,18 @@
   }
 }
 
+.section__subtitle--upper + .section__title-h2 {
+  margin-top: 10px;
+}
+
+.section__title-h2 + .section__subtitle--upper {
+  margin-top: 10px;
+
+  @include vp-767 {
+    margin-top: 5px;
+  }
+}
+
 .section__subtitle + .btn {
   margin-top: 40px;
 
@@ -216,7 +228,7 @@
   }
 }
 
-.content + .btn {
+.content + .btn {//
   margin-top: 80px;
 
   @include vp-767 {

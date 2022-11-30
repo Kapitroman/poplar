@@ -1,0 +1,160 @@
+.money-calculator-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  max-width: 340px;
+  min-height: 564px;
+  padding: 45px 15px;
+  border-radius: 35px;
+
+  text-align: center;
+
+  background-color: $color-default-white;
+
+  @include vp-1279 {
+    border-radius: 35px;
+    padding: 39px 15px;
+    min-height: 500px;
+  }
+
+  @include vp-767 {
+    max-width: none;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 46px;
+
+    font-size: 25px;
+    line-height: 32px;
+
+    @include vp-1279 {
+      margin-bottom: 55px;
+
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+
+  &__features {
+    * + .money-calculator-item__feature {
+      margin-top: 32px;
+
+      @include vp-1279 {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &__feature {
+    margin: 0;
+  }
+
+  &__key {
+    margin: 0;
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    color: $color-slate-grey;
+    text-transform: uppercase;
+
+    @include vp-1279 {
+      margin-bottom: 12px;
+
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+
+  &__value {
+    margin: 0;
+
+    font-family: $ff-arbutus;
+    font-size: 32px;
+    line-height: 40px;
+
+    @include vp-1279 {
+      font-size: 30px;
+      line-height: 38px;
+    }
+  }
+
+  &__value--amount {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  &:first-child {
+    @include vp-767 {
+      display: none;
+    }
+  }
+}
+
+.money-calculator-item--poplar {
+  max-width: 400px;
+  min-height: 629px;
+  border-radius: 45px;
+  padding: 55px 15px 44px 15px;
+
+  background-color: $color-blue-whale-2;
+
+  @include vp-767 {
+    max-width: none;
+  }
+
+  .logo {
+    svg {
+      width: 204px;
+      height: 81px;
+
+      @include vp-1279 {
+        width: 150px;
+        height: 60px;
+      }
+    }
+  }
+
+  .money-calculator-item__title {
+    @include vp-1279 {
+      margin-bottom: 37px;
+    }
+  }
+
+  .money-calculator-item__key {
+    font-size: 16px;
+    line-height: 20px;
+    color: $color-heather;
+
+    @include vp-1279 {
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+
+  .money-calculator-item__value {
+    font-size: 40px;
+    line-height: 50px;
+    color: $color-default-white;
+
+    @include vp-1279 {
+      font-size: 30px;
+      line-height: 38px;
+    }
+  }
+
+  .money-calculator-item__value--amount {
+    font-size: 50px;
+    line-height: 63px;
+
+    color: $color-mountain-meadow;
+
+    @include vp-1279 {
+      font-size: 30px;
+      line-height: 38px;
+    }
+  }
+}

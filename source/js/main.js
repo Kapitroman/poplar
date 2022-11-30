@@ -3,6 +3,8 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {CustomSelect} from './modules/select/custom-select';
 import {initBurgerMenu} from './modules/init-burger-menu';
+import {initSliderAmountCash} from './modules/init-slider-amount-cash';
+import {initMoneyCalculatorPeriodsSwiper} from './modules/init-money-calculator-periods-swiper';
 
 // ---------------------------------
 
@@ -26,6 +28,8 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
     initBurgerMenu();
+    initSliderAmountCash();
+    initMoneyCalculatorPeriodsSwiper();
   });
 });
 

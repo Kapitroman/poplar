@@ -1,0 +1,28 @@
+.earn-more-with-poplar {
+  background-color: $color-alice-blue;
+
+  .section__icons {
+    svg {
+      width: 70px;
+      height: 67px;
+
+      @include vp-767 {
+        width: 32px;
+        height: 31px;
+      }
+    }
+  }
+
+  .money-calculation-with-polar {
+    margin-top: 60px;
+    margin-bottom: 80px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid rgba($color-blue-whale-2, 0.2);
+
+    @include vp-767 {
+      margin-top: 30px;
+      margin-bottom: 50px;
+      padding-bottom: 33px;
+    }
+  }
+}
