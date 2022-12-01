@@ -1,0 +1,164 @@
+.hey-poplar {
+  background-color: $color-alice-blue;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+
+    @include vp-767 {
+      flex-direction: column;
+    }
+  }
+
+  &__invest-features {
+    display: flex;
+    align-items: center;
+
+    width: 51.02%;
+    margin-right: 8.81%;
+
+    @include vp-1023 {
+      flex-direction: column;
+    }
+
+    @include vp-767 {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 68px;
+    }
+  }
+
+  &__invest-describe {
+    width: 40.17%;
+
+    @include vp-767 {
+      width: 100%;
+    }
+  }
+
+  &__features {
+    width: 100%;
+
+    @include vp-1023 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__person {
+    position: relative;
+
+    flex-shrink: 0;
+
+    width: 130px;
+    height: 130px;
+
+    @include vp-1023 {
+      margin-bottom: 40px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+
+      object-fit: cover;
+    }
+
+    span {
+      position: absolute;
+      right: 8px;
+      bottom: 8px;
+
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      border: 4px solid $color-default-white;
+
+      background-color: $color-mountain-meadow;
+    }
+  }
+
+  &__feature {
+    position: relative;
+
+    width: calc((100%) * 380 / 472);
+    margin-left: calc((100%) * 92 / 472);
+    padding: 20px 40px;
+    border-radius: 25px;
+
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 500;
+    color: $color-default-white;
+
+    background-color: $color-blue-whale-2;
+    box-shadow: 0px 5px 10px 0px rgba($color-blue-whale, 0.2);
+
+    @include vp-1023 {
+      margin-left: 0;
+
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    @include vp-767 {
+      min-height: 80px;
+    }
+
+    @include vp-479 {
+      width: 100%;
+      min-height: 110px;
+      padding: 25px 40px;
+    }
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      bottom: -18px;
+      left: 54px;
+
+      width: 26px;
+      height: 18px;
+
+      background-image: url("../img/svg/triangle.svg");
+    }
+
+    span {
+      color: $color-mountain-meadow;
+    }
+  }
+
+  &__feature:first-child,
+  &__feature:last-child {
+    transform: translateX(-142px);
+
+    @include vp-1023 {
+      transform: none;
+    }
+  }
+
+  .hey-poplar__feature + .hey-poplar__feature {
+    margin-top: 87px;
+
+    @include vp-1023 {
+      margin-top: 48px;
+    }
+  }
+
+  .section__title-h3 {
+    @include vp-1023 {
+      font-size: 20px;
+      line-height: 25px;
+    }
+  }
+
+  .section__subtitle {
+    @include vp-1023 {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}

@@ -200,6 +200,14 @@
   }
 }
 
+.section__title-h3 + .section__subtitle {
+  margin-top: 25px;
+
+  @include vp-767 {
+    margin-top: 15px;
+  }
+}
+
 .section__subtitle + .section__subtitle {
   margin-top: 28px;
 
