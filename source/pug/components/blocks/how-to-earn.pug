@@ -1,0 +1,56 @@
+mixin how-to-earn()
+  section.section.how-to-earn
+    .container
+      .section__title-h2 <span>How to earn</span> with poplar?
+      .content.how-to-earn__content
+        .how-to-earn__content-item
+          .how-to-earn__content-item-text
+            .how-to-earn__content-item-text-wrapper
+              p.how-to-earn__content-item-title See Where You’re<br> Bleeding Money
+              p.how-to-earn__content-item-subtitle
+                | Start with a free idle cash report to se how much money you have
+                | sitting around that could be earning dividends.
+          .how-to-earn__content-item-images
+            .how-to-earn__content-item-image-first
+              +picture("content/how-to-earn", "people-01", "png", 483, 400, "photo people at work")
+            .how-to-earn__content-item-image-second
+              +picture("content/screens", "screen-bank-accounts", "png", 304, 304, "screen 'Bank Account'")
+        .how-to-earn__content-item
+          .how-to-earn__content-item-text
+            .how-to-earn__content-item-text-wrapper
+              p.how-to-earn__content-item-title Book a Seed<br> Session
+              p.how-to-earn__content-item-subtitle
+                | When you’re ready to invest that money, book a session with us to setup your free
+                | account. The best time to plant a seed was 20 years ago but now is good, too.
+          .how-to-earn__content-item-images
+            .how-to-earn__content-item-image-first
+              +picture("content/how-to-earn", "people-02", "png", 483, 400, "photo people at work")
+            .how-to-earn__content-item-image-second
+              +picture("content/screens", "screen-dates", "png", 220, 300, "screen 'Dates'")
+        .how-to-earn__content-item
+          .how-to-earn__content-item-text
+            .how-to-earn__content-item-text-wrapper
+              p.how-to-earn__content-item-title Grow your<br> money
+              p.how-to-earn__content-item-subtitle
+                | Set how often you want to invest. Poplar will grow 24/7,
+                | inflation-proofing your business.
+          .how-to-earn__content-item-images
+            .how-to-earn__content-item-image-first
+              +picture("content/how-to-earn", "people-03", "png", 483, 400, "photo people at work")
+            .how-to-earn__content-item-image-second
+              +picture("content/screens", "screen-diagram", "png", 465, 220, "screen 'Diagram'")
+        .how-to-earn__content-item
+          .how-to-earn__content-item-text
+            .how-to-earn__content-item-text-wrapper
+              p.how-to-earn__content-item-title Withdraw as<br> needed
+              p.how-to-earn__content-item-subtitle
+                | Take your cash out whenever you need to. There are no lock outs or withdrawal limits.
+          .how-to-earn__content-item-images
+            .how-to-earn__content-item-image-first
+              +picture("content/how-to-earn", "people-04", "png", 483, 400, "photo people at work")
+            .how-to-earn__content-item-image-second
+              +picture("content/screens", "screen-withdraw", "png", 385, 182, "screen 'Withdraw'")
+      +btn({
+        href: "#",
+        text: "Open a free account"
+      })

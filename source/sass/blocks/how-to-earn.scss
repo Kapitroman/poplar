@@ -1,0 +1,237 @@
+.how-to-earn {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section__title-h2 {
+    text-align: center;
+  }
+
+  &__content {
+    counter-reset: section;
+
+    width: 100%;
+    padding-bottom: 40px;
+  }
+
+  &__content-item {
+    counter-increment: section;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    @include vp-767 {
+      flex-direction: column;
+    }
+  }
+
+  &__content-item:nth-child(odd) {
+    .how-to-earn__content-item-text {
+      width: 390px;
+
+      @include vp-1023 {
+        width: 260px;
+      }
+
+      @include vp-767 {
+        width: 100%;
+        margin-bottom: 40px;
+      }
+    }
+
+    .how-to-earn__content-item-images {
+      width: calc((100% - 390px) * 682 / 790);
+      margin-left: calc((100% - 390px) * 108 / 790);
+
+      @include vp-1023 {
+        width: calc((100% - 260px) * 683 / 763);
+        margin-left: calc((100% - 260px) * 80 / 763);
+      }
+
+      @include vp-767 {
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+
+    .how-to-earn__content-item-image-first {
+      margin-right: 29.18%;
+    }
+  }
+
+  &__content-item:nth-child(even) {
+    .how-to-earn__content-item-text {
+      order: 2;
+
+      width: 355px;
+
+      @include vp-1023 {
+        width: 260px;
+      }
+
+      @include vp-767 {
+        order: initial;
+
+        width: 100%;
+        margin-bottom: 40px;
+      }
+    }
+
+    .how-to-earn__content-item-images {
+      width: calc((100% - 480px) * 583 / 700);
+      margin-right: calc((100% - 480px) * 117 / 700);
+
+      @include vp-1023 {
+        width: calc((100% - 360px) * 583 / 663);
+        margin-right: calc((100% - 380px) * 80 / 663);
+      }
+
+      @include vp-767 {
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+
+    .how-to-earn__content-item-image-first {
+      margin-left: 17.15%;
+    }
+  }
+
+  &__content-item:nth-child(1) {
+    .how-to-earn__content-item-image-second {
+      margin-left: 55.42%;
+
+      aspect-ratio: 1 / 1;
+    }
+  }
+
+  &__content-item:nth-child(2) {
+    .how-to-earn__content-item-image-second {
+      margin-right: 62.26%;
+
+      aspect-ratio: 22 / 30;
+    }
+  }
+
+  &__content-item:nth-child(3) {
+    .how-to-earn__content-item-image-second {
+      margin-left: 31.82%;
+
+      aspect-ratio: 465 / 220;
+    }
+  }
+
+  &__content-item:nth-child(4) {
+    .how-to-earn__content-item-image-second {
+      margin-right: 33.96%;
+
+      aspect-ratio: 385 / 182;
+    }
+  }
+
+  .how-to-earn__content-item + .how-to-earn__content-item {
+    margin-top: 80px;
+
+    @include vp-767 {
+      margin-top: 60px;
+    }
+  }
+
+  &__content-item-text-wrapper {
+    position: relative;
+
+    padding-left: 80px;
+
+    @include vp-1023 {
+      padding-left: 50px;
+    }
+
+    &::before {
+      content: counter(section);
+
+      position: absolute;
+      top: 6px;
+      left: 0;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+
+      color: $color-default-white;
+      font-size: 25px;
+      font-weight: 500;
+
+      background-color: $color-mountain-meadow;
+
+      @include vp-1023 {
+        width: 30px;
+        height: 30px;
+
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__content-item-title {
+    margin: 0;
+    margin-bottom: 30px;
+
+    font-family: $ff-arbutus;
+    font-size: 25px;
+    line-height: 31px;
+    color: $color-blue-whale;
+
+    @include vp-1023 {
+      margin-bottom: 20px;
+
+      font-size: 18px;
+      line-height: 23px;
+    }
+  }
+
+  &__content-item-subtitle {
+    margin: 0;
+
+    font-weight: 500;
+
+    @include vp-1023 {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  &__content-item-images {
+    display: grid;
+  }
+
+  &__content-item-image-first,
+  &__content-item-image-second {
+    grid-area: 1/-1;
+
+    img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+    }
+  }
+
+  &__content-item-image-first {
+    aspect-ratio: 483 / 400;
+
+    border-radius: 35px;
+  }
+
+  &__content-item-image-second {
+    position: relative;
+    align-self: end;
+    bottom: -10%;
+  }
+}

@@ -3711,10 +3711,6 @@ button,
   align-items: center;
 }
 
-.how .section__title-h2 {
-  margin-bottom: 80px;
-}
-
 .how__list-items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3723,7 +3719,6 @@ button,
   flex-wrap: wrap;
   gap: 39px;
   width: 100%;
-  margin-bottom: 80px;
 }
 
 .how__item {
@@ -3793,6 +3788,169 @@ button,
 .how__item:nth-child(4) svg {
   width: 70px;
   height: 70px;
+}
+
+.how-to-earn .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.how-to-earn .section__title-h2 {
+  text-align: center;
+}
+
+.how-to-earn__content {
+  counter-reset: section;
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+.how-to-earn__content-item {
+  counter-increment: section;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.how-to-earn__content-item:nth-child(odd) .how-to-earn__content-item-text {
+  width: 390px;
+}
+
+.how-to-earn__content-item:nth-child(odd) .how-to-earn__content-item-images {
+  width: calc((100% - 390px) * 682 / 790);
+  margin-left: calc((100% - 390px) * 108 / 790);
+}
+
+.how-to-earn__content-item:nth-child(odd) .how-to-earn__content-item-image-first {
+  margin-right: 29.18%;
+}
+
+.how-to-earn__content-item:nth-child(even) .how-to-earn__content-item-text {
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+  width: 355px;
+}
+
+.how-to-earn__content-item:nth-child(even) .how-to-earn__content-item-images {
+  width: calc((100% - 480px) * 583 / 700);
+  margin-right: calc((100% - 480px) * 117 / 700);
+}
+
+.how-to-earn__content-item:nth-child(even) .how-to-earn__content-item-image-first {
+  margin-left: 17.15%;
+}
+
+.how-to-earn__content-item:nth-child(1) .how-to-earn__content-item-image-second {
+  margin-left: 55.42%;
+  aspect-ratio: 1/1;
+}
+
+.how-to-earn__content-item:nth-child(2) .how-to-earn__content-item-image-second {
+  margin-right: 62.26%;
+  aspect-ratio: 22/30;
+}
+
+.how-to-earn__content-item:nth-child(3) .how-to-earn__content-item-image-second {
+  margin-left: 31.82%;
+  aspect-ratio: 465/220;
+}
+
+.how-to-earn__content-item:nth-child(4) .how-to-earn__content-item-image-second {
+  margin-right: 33.96%;
+  aspect-ratio: 385/182;
+}
+
+.how-to-earn .how-to-earn__content-item + .how-to-earn__content-item {
+  margin-top: 80px;
+}
+
+.how-to-earn__content-item-text-wrapper {
+  position: relative;
+  padding-left: 80px;
+}
+
+.how-to-earn__content-item-text-wrapper::before {
+  content: counter(section);
+  position: absolute;
+  top: 6px;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 500;
+  background-color: #0ecb78;
+}
+
+.how-to-earn__content-item-title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-family: "Arbutus Slab", "Arial", sans-serif;
+  font-size: 25px;
+  line-height: 31px;
+  color: #123149;
+}
+
+.how-to-earn__content-item-subtitle {
+  margin: 0;
+  font-weight: 500;
+}
+
+.how-to-earn__content-item-images {
+  display: -ms-grid;
+  display: grid;
+}
+
+.how-to-earn__content-item-image-first,
+.how-to-earn__content-item-image-second {
+  -ms-grid-row: 1;
+  grid-area: 1/-1;
+}
+
+.how-to-earn__content-item-image-first img,
+.how-to-earn__content-item-image-second img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.how-to-earn__content-item-image-first {
+  aspect-ratio: 483/400;
+  border-radius: 35px;
+}
+
+.how-to-earn__content-item-image-second {
+  position: relative;
+  -ms-flex-item-align: end;
+  -ms-grid-row-align: end;
+  align-self: end;
+  bottom: -10%;
 }
 
 /* @mixin hover-focus {
@@ -3935,6 +4093,45 @@ button,
   .how__item-text {
     font-size: 12px;
     line-height: 18px;
+  }
+
+  .how-to-earn__content-item:nth-child(odd) .how-to-earn__content-item-text {
+    width: 260px;
+  }
+
+  .how-to-earn__content-item:nth-child(odd) .how-to-earn__content-item-images {
+    width: calc((100% - 260px) * 683 / 763);
+    margin-left: calc((100% - 260px) * 80 / 763);
+  }
+
+  .how-to-earn__content-item:nth-child(even) .how-to-earn__content-item-text {
+    width: 260px;
+  }
+
+  .how-to-earn__content-item:nth-child(even) .how-to-earn__content-item-images {
+    width: calc((100% - 360px) * 583 / 663);
+    margin-right: calc((100% - 380px) * 80 / 663);
+  }
+
+  .how-to-earn__content-item-text-wrapper {
+    padding-left: 50px;
+  }
+
+  .how-to-earn__content-item-text-wrapper::before {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+
+  .how-to-earn__content-item-title {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .how-to-earn__content-item-subtitle {
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 
@@ -4424,14 +4621,6 @@ button,
     padding-bottom: 33px;
   }
 
-  .how .section__title-h2 {
-    margin-bottom: 30px;
-  }
-
-  .how__list-items {
-    margin-bottom: 40px;
-  }
-
   .how__item {
     width: calc((100% - 15px) / 2);
   }
@@ -4458,6 +4647,40 @@ button,
   .how__item:nth-child(4) svg {
     width: 40px;
     height: 40px;
+  }
+
+  .how-to-earn__content-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .how-to-earn__content-item:nth-child(odd) .how-to-earn__content-item-text {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .how-to-earn__content-item:nth-child(odd) .how-to-earn__content-item-images {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .how-to-earn__content-item:nth-child(even) .how-to-earn__content-item-text {
+    -webkit-box-ordinal-group: initial;
+    -ms-flex-order: initial;
+    order: initial;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .how-to-earn__content-item:nth-child(even) .how-to-earn__content-item-images {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .how-to-earn .how-to-earn__content-item + .how-to-earn__content-item {
+    margin-top: 60px;
   }
 }
 

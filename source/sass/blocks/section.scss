@@ -180,7 +180,7 @@
   }
 }
 
-.section__title-h2 + .content {//
+.section__title-h2 + .content {
   margin-top: 80px;
 
   @include vp-767 {
@@ -228,7 +228,7 @@
   }
 }
 
-.content + .btn {//
+.content + .btn {
   margin-top: 80px;
 
   @include vp-767 {
