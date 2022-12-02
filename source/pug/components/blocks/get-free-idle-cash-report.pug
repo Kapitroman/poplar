@@ -1,0 +1,25 @@
+mixin get-free-idle-cash-report()
+  section.section.get-free-idle-cash-report
+    .get-free-idle-cash-report__background
+    .container
+      .get-free-idle-cash-report__wrapper
+        .mobil-center
+          .section__icons.section__icons--vertical
+            +icon("icon-report", 68, 61)
+            .section__icons-dots
+              span
+              span
+              span
+          h2.section__title-h2 Get a free<br> <span>idle cash</span> report
+          p.section__subtitle
+            | Cash for payroll, inventory or taxhes can be invested untilyou need it...
+            | instead of losing value in a bank account.
+          +btn({
+            href: "#",
+            text: "See what you could earn"
+          })
+        .get-free-idle-cash-report__images
+          .get-free-idle-cash-report__image
+            +picture("content/screens", "screen-idle-cash", "png", 522, 242, "screen 'Idle cash'")
+          .get-free-idle-cash-report__image
+            +picture("content/screens", "screen-quick-withdrawal", "png", 522, 242, "screen 'Quick Withdrawal'")

@@ -33,13 +33,16 @@
   @include hover-focus {
     opacity: 0.8;
   }
+
+  @include vp-1023 {
+    padding: 11px 25px;
+
+    font-size: 14px;
+  }
 }
 
 .btn:not(header .btn) {
   @include vp-767 {
     width: 100%;
-    padding: 11px 25px;
-
-    font-size: 14px;
   }
 }

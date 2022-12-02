@@ -1,0 +1,131 @@
+.get-free-idle-cash-report {
+  position: relative;
+
+  &__background {
+    position: absolute;
+    left: 0;
+    right: 50%;
+
+    height: calc(100% - 260px);
+    border-radius: 0 60px 60px 0;
+
+    background-color: $color-alice-blue;
+
+    background-image: url("../img/content/backgrounds/background-report.png");
+    background-position: left 0 bottom 0;
+    background-repeat: no-repeat;
+    background-size: 100% 64.2%;
+
+    @include retina {
+      background-image: url("../img/content/backgrounds/background-report@2x.png");
+    }
+
+    @include vp-1023 {
+      border-radius: 0 45px 45px 0;
+    }
+
+    @include vp-767 {
+      right: 100px;
+      bottom: 50px;
+
+      height: calc(107px + 107px + 25px + 25px + 10px);
+      border-radius: 0 30px 30px 0;
+    }
+
+    @include vp-479 {
+      right: 20px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+
+    @include vp-767 {
+      flex-direction: column;
+      align-items: initial;
+    }
+  }
+
+  .mobil-center {
+    max-width: 375px;
+    order: 2;
+
+    @include vp-1023 {
+      width: 40.8%;
+    }
+
+    @include vp-767 {
+      order: initial;
+
+      width: 100%;
+      max-width: none;
+      margin-bottom: 50px;
+    }
+
+    .section__icons {
+      svg {
+        width: 68px;
+        height: 61px;
+
+        @include vp-1023 {
+          width: 31px;
+          height: 28px;
+        }
+      }
+    }
+  }
+
+  &__images {
+    position: relative;
+
+    width: 50%;
+    margin-right: 9.83%;
+    padding-top: 58px;
+    padding-bottom: 58px;
+    padding-right: 58px;
+
+    @include vp-1023 {
+      padding: 25px 25px 25px 0;
+    }
+
+    @include vp-767{
+      width: 100%;
+      margin-right: 0;
+      padding: 25px;
+    }
+  }
+
+  &__image {
+    aspect-ratio: 522 / 242;
+
+    @include vp-767 {
+      aspect-ratio: initial;
+
+      width: 230px;
+      height: 107px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    img {
+      border-radius: 25px;
+      width: 100%;
+      height: 100%;
+
+      box-shadow: 0px 2px 4px 0px rgba($color-blue-whale-2, 0.12);
+
+      @include vp-767 {
+        border-radius: 15px;
+      }
+    }
+  }
+
+  .get-free-idle-cash-report__image + .get-free-idle-cash-report__image {
+    margin-top: 20px;
+
+    @include vp-767 {
+      margin-top: 10px;
+    }
+  }
+}
