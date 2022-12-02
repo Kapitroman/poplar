@@ -7,7 +7,7 @@
 
   background-color: $color-arapawa;
 
-  @include vp-767 {
+  @include vp-1023 {
     width: 20px;
     height: 20px;
     border-radius: 6px;
@@ -26,12 +26,21 @@
 
     transform: rotate(45deg);
 
-    @include vp-767 {
+    @include vp-1023 {
       top: 4px;
       left: 8px;
 
       width: 5px;
       height: 10px;
     }
+  }
+}
+
+.check-point--different {
+  background-color: $color-mountain-meadow;
+
+  &::before {
+    border: solid $color-default-white;
+    border-width: 0 2px 2px 0;
   }
 }

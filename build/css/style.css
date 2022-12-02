@@ -3070,6 +3070,15 @@ button,
   transform: rotate(45deg);
 }
 
+.check-point--different {
+  background-color: #0ecb78;
+}
+
+.check-point--different::before {
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+}
+
 .section {
   padding-top: 130px;
   padding-bottom: 130px;
@@ -3107,6 +3116,10 @@ button,
   margin: 0;
   font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 500;
+}
+
+.section__subtitle span {
+  color: #0ecb78;
 }
 
 .section__subtitle--upper {
@@ -3180,6 +3193,10 @@ button,
 .section--dark .section__title-h3,
 .section--dark .section__subtitle {
   color: #ffffff;
+}
+
+.section--blue {
+  background-color: #f3f6fa;
 }
 
 .section--intro {
@@ -3686,10 +3703,6 @@ button,
   margin-left: 40px;
 }
 
-.earn-more-with-poplar {
-  background-color: #f3f6fa;
-}
-
 .earn-more-with-poplar .section__icons svg {
   width: 70px;
   height: 67px;
@@ -4019,6 +4032,7 @@ button,
 .hey-poplar__feature {
   position: relative;
   width: 80.5084745763%;
+  margin: 0;
   margin-left: 19.4915254237%;
   padding: 20px 40px;
   border-radius: 25px;
@@ -4054,6 +4068,74 @@ button,
 
 .hey-poplar .hey-poplar__feature + .hey-poplar__feature {
   margin-top: 87px;
+}
+
+.how-is-poplar-different .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.how-is-poplar-different__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.how-is-poplar-different__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  min-height: 200px;
+  border-radius: 25px;
+  padding: 40px;
+  color: #ffffff;
+}
+
+.how-is-poplar-different__item-check {
+  width: 35px;
+  margin-right: 20px;
+}
+
+.how-is-poplar-different__item--accent {
+  background-color: #ffffff;
+}
+
+.how-is-poplar-different__item--accent .how-is-poplar-different__item-title {
+  color: #123149;
+}
+
+.how-is-poplar-different__item--accent .how-is-poplar-different__item-text {
+  color: #2b475b;
+}
+
+.how-is-poplar-different__item-title {
+  margin-top: 2px;
+  margin-bottom: 15px;
+  font-family: "Arbutus Slab", "Arial", sans-serif;
+  font-size: 25px;
+  line-height: 31px;
+}
+
+.how-is-poplar-different__item-text {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
 }
 
 /* @mixin hover-focus {
@@ -4167,6 +4249,33 @@ button,
 
   .header {
     padding: 50px 0;
+  }
+
+  .check-point {
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+  }
+
+  .check-point::before {
+    top: 4px;
+    left: 8px;
+    width: 5px;
+    height: 10px;
+  }
+
+  .inflation-proof-cash__features {
+    max-width: 750px;
+    margin-bottom: 24px;
+    font-size: 12px;
+  }
+
+  .inflation-proof-cash__feature-item {
+    padding: 4px 0;
+  }
+
+  .inflation-proof-cash__feature-item .check-point {
+    margin-right: 10px;
   }
 
   .software-service__item {
@@ -4286,6 +4395,17 @@ button,
   .hey-poplar .section__subtitle {
     font-size: 14px;
     line-height: 20px;
+  }
+
+  .how-is-poplar-different__item {
+    border-radius: 20px;
+    min-height: auto;
+    padding: 25px 20px;
+  }
+
+  .how-is-poplar-different__item-check {
+    width: 20px;
+    padding-top: 1px;
   }
 }
 
@@ -4512,19 +4632,6 @@ button,
     line-height: 20px;
   }
 
-  .check-point {
-    width: 20px;
-    height: 20px;
-    border-radius: 6px;
-  }
-
-  .check-point::before {
-    top: 4px;
-    left: 8px;
-    width: 5px;
-    height: 10px;
-  }
-
   .section {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -4706,16 +4813,6 @@ button,
     -moz-column-gap: initial;
     column-gap: initial;
     row-gap: 6px;
-    margin-bottom: 24px;
-    font-size: 12px;
-  }
-
-  .inflation-proof-cash__feature-item {
-    padding: 4px 0;
-  }
-
-  .inflation-proof-cash__feature-item .check-point {
-    margin-right: 10px;
   }
 
   .stop-warring {
@@ -4860,6 +4957,21 @@ button,
 
   .hey-poplar__feature {
     min-height: 80px;
+  }
+
+  .how-is-poplar-different__item {
+    width: 100%;
+  }
+
+  .how-is-poplar-different__item-title {
+    margin-top: 0;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .how-is-poplar-different__item-text {
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 

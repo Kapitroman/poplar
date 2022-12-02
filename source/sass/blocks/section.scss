@@ -57,6 +57,10 @@
       font-size: 14px;
       line-height: 20px;
     }
+
+    span {
+      color: $color-mountain-meadow;
+    }
   }
 
   &__subtitle--upper {
@@ -154,6 +158,10 @@
   .section__subtitle {
     color: $color-default-white;
   }
+}
+
+.section--blue {
+  background-color: $color-alice-blue;
 }
 
 .section--intro {
