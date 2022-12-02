@@ -1,0 +1,17 @@
+extends ../components/base/layout
+
+block variables
+  - const title = "About. Poplar - app that helps you invest cash" //- на страницах кроме главной используйте О нас — ProjectName
+  - const wrapperMods = ""
+  - const hasHeader = true
+  - const headerMods = ""
+  - const hasFooter = true
+  - const footerMods = ""
+  - const currentUrl = "about.html" //- для остальных страниц пишем пустую строку или индекс активного headerLinks
+
+block main
+  main
+    +about-us()
+    +stop-warring(true)
+
+block modals

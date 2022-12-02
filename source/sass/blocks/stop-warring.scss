@@ -4,7 +4,7 @@
   padding-bottom: 0;
 
   @include vp-767 {
-    padding-bottom: 0;
+    background-image: linear-gradient(to bottom, $color-default-white 80%, $color-blue-whale-2 80%);
   }
 
   &__wrapper-head-section {

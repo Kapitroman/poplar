@@ -1,0 +1,13 @@
+.about-us {
+  .intro {
+    max-width: 500px;
+
+    @include vp-767 {
+      max-width: 340px;
+    }
+
+    @include vp-479 {
+      max-width: none;
+    }
+  }
+}

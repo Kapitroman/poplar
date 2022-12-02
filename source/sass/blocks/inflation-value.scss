@@ -5,6 +5,10 @@
     @include vp-1023 {
       max-width: 330px;
     }
+
+    @include vp-479 {
+      max-width: none;
+    }
   }
 
   .section__icons {
