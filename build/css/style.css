@@ -4205,6 +4205,20 @@ button,
   max-width: 500px;
 }
 
+.meet-poplar .center {
+  max-width: 765px;
+}
+
+.meet-poplar .section__icons svg:first-child {
+  width: 50px;
+  height: 50px;
+}
+
+.meet-poplar .section__icons svg:last-child {
+  width: 60px;
+  height: 60px;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -4589,6 +4603,20 @@ button,
 
   .get-free-idle-cash-report__images {
     padding: 25px 25px 25px 0;
+  }
+
+  .meet-poplar .center {
+    max-width: 580px;
+  }
+
+  .meet-poplar .section__icons svg:first-child {
+    width: 18px;
+    height: 18px;
+  }
+
+  .meet-poplar .section__icons svg:last-child {
+    width: 23px;
+    height: 23px;
   }
 }
 
@@ -5230,6 +5258,10 @@ button,
   }
 
   .about-us .intro {
+    max-width: none;
+  }
+
+  .meet-poplar .center {
     max-width: none;
   }
 }
