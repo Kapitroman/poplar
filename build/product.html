@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>Список страниц</title>
+    <title>Product. Poplar - app that helps you invest cash</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -152,75 +152,126 @@
 </g></symbol></svg>
     </div>
     <div class="wrapper">
-      <style>
-        .container {
-          padding-top: 50px;
-          padding-bottom: 50px;
-        }
-        
-        .logo-sitemap {
-          display: inline-block;
-          padding: 5px 20px;
-          background-color: #123149;
-          line-height: 0;
-          color: #ffffff;
-        }
-        
-        h1 {
-          font-size: 24px;
-          line-height: 28px;
-        }
-        
-        a {
-          color: rgb(10, 10, 175);
-        }
-        
-        li {
-          font-size: 18px;
-          line-height: 22px;
-          margin-bottom: 7px;
-        }
-        
-        img {
-          width: 100%;
-          max-width: 300px;
-          height: auto;
-          display: block;
-          margin-bottom: 40px;
-        }
-        
-        @media (max-width: 768px) {
-          .container {
-            padding-top: 20px;
-            padding-bottom: 20px;
-          }
-        
-          ol {
-            padding-left: 20px;
-          }
-        
-          ol li {
-            margin-bottom: 15px;
-          }
-        }
-        
-      </style>
-      <main>
+      <header class="header">
         <div class="container">
-          <div class="logo-sitemap">
-            <svg width="180" height="72" aria-hidden="true">
-              <use xlink:href="#icon-logo"></use>
-            </svg>
+          <div class="header__wrapper">
+            <div class="header__panel"><a class="logo" href="index.html" aria-label="go on mainpage"><span class="visually-hidden">Logo Poplar</span>
+                <svg width="180" height="72" aria-hidden="true">
+                  <use xlink:href="#icon-logo"></use>
+                </svg></a>
+              <button class="menu-toggle btn-reset" type="button" aria-label="toggle view menu" aria-pressed="false"><span class="menu-toggle__line menu-toggle__line--top"></span><span class="menu-toggle__line menu-toggle__line--center"></span><span class="menu-toggle__line menu-toggle__line--bottom"></span></button>
+            </div>
+            <nav class="main-nav">
+              <ul class="main-nav__list">
+                <li class="main-nav__item"><a class="main-nav__link" href="index.html">Home</a>
+                </li>
+                <li class="main-nav__item"><a class="main-nav__link" href="about.html">About</a>
+                </li>
+                <li class="main-nav__item"><span class="main-nav__link is-active">Product</span>
+                </li>
+                <li class="main-nav__item"><a class="main-nav__link" href="solution.html">Solutions</a>
+                </li>
+                <li class="main-nav__item"><a class="main-nav__link" href="pricing.html">Pricing</a>
+                </li>
+              </ul>
+              <a class="btn header__button" href="#">Try for Free</a>
+            </nav>
           </div>
-          <h1>Список страниц</h1>
-          <ol>
-            <li><a href="ui-kit.html">UI-kit — ui-kit.html</a></li>
-            <li><a href="index.html">Home — index.html</a></li>
-            <li><a href="about.html">About — about.html</a></li>
-            <li><a href="product.html">Product — about.html</a></li>
-          </ol>
         </div>
+      </header>
+      <main>
+        <section class="section section--dark section--intro poplar-yield">
+          <div class="container">
+            <div class="poplar-yield__wrapper">
+              <div class="intro">
+                <h1 class="intro__title">Yield Every Minute With <span>poplar’s yield</span> as a service software</h1>
+                <p class="intro__subtitle">See how Poplar puts your cash to work</p>
+                <a class="btn intro__button" href="#">Open a free account</a>
+              </div>
+              <div class="poplar-yield__form">
+                <form action="#" method="get">
+                  <div class="custom-input">
+                    <label><span class="custom-input__label">First and Last Name:</span>
+                      <input type="text" name="person-name">
+                    </label>
+                  </div>
+                  <div class="custom-input">
+                    <label><span class="custom-input__label">Email:</span>
+                      <input type="email" name="email">
+                    </label>
+                  </div>
+                  <div class="custom-input">
+                    <label><span class="custom-input__label">Company:</span>
+                      <input type="text" name="person-company">
+                    </label>
+                  </div>
+                  <a class="btn poplar-yield__button" href="#">contact me</a>
+                  <p class="poplar-yield__note">Submit the form and we will get in touch in the next 24 hours.</p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="stop-warring section section--light-dark">
+          <div class="container">
+            <div class="stop-warring__wrapper-head-section">
+              <div class="stop-warring__wrapper-head">
+                <h2 class="section__title-h2">Stop worrying about <span>your&nbsp;cash</span></h2>
+                <p class="section__subtitle">No need to bleed money as your cash loses value. Poplar can put your money to work.</p>
+              </div>
+              <a class="btn" href="#">Open a free account</a>
+            </div>
+            <div class="stop-warring__screen">
+              <picture>
+                <source type="image/webp" srcset="img/content/screens/screen-dashboard.webp, img/content/screens/screen-dashboard@2x.webp 2x"><img src="img/content/screens/screen-dashboard.png" srcset="img/content/screens/screen-dashboard@2x.png 2x" width="1168" height="736" alt="screen app">
+              </picture>
+            </div>
+          </div>
+        </section>
       </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__wrapper">
+            <div class="footer__poplar"><a class="logo" href="index.html" aria-label="go on mainpage"><span class="visually-hidden">Logo Poplar</span>
+                <svg width="151" height="60" aria-hidden="true">
+                  <use xlink:href="#icon-logo"></use>
+                </svg></a>
+              <p class="footer__text">Most business owners have no idea what to do with the extra cash in their business.</p>
+              <ul class="footer__social-list">
+                <li class="footer__social-item"><a class="footer__social-link" href="#"><span class="visually-hidden">Google</span>
+                    <svg width="18" height="21" aria-hidden="true">
+                      <use xlink:href="#icon-google"></use>
+                    </svg></a></li>
+                <li class="footer__social-item"><a class="footer__social-link" href="#"><span class="visually-hidden">Google</span>
+                    <svg width="18" height="21" aria-hidden="true">
+                      <use xlink:href="#icon-twitter"></use>
+                    </svg></a></li>
+                <li class="footer__social-item"><a class="footer__social-link" href="#"><span class="visually-hidden">Google</span>
+                    <svg width="16" height="21" aria-hidden="true">
+                      <use xlink:href="#icon-instagram"></use>
+                    </svg></a></li>
+                <li class="footer__social-item"><a class="footer__social-link" href="#"><span class="visually-hidden">Google</span>
+                    <svg width="16" height="21" aria-hidden="true">
+                      <use xlink:href="#icon-linkedin"></use>
+                    </svg></a></li>
+                <li class="footer__social-item"><a class="footer__social-link" href="#"><span class="visually-hidden">Google</span>
+                    <svg width="21" height="21" aria-hidden="true">
+                      <use xlink:href="#icon-youtube"></use>
+                    </svg></a></li>
+              </ul>
+              <p class="footer__copyright">Copyright © Poplar 2022</p>
+            </div>
+            <div class="footer__menu">
+              <div class="footer__menu-column">
+                <p class="footer__menu-column-title">Company</p><a class="footer__menu-column-link" href="#">About</a><a class="footer__menu-column-link" href="#">Terms</a><a class="footer__menu-column-link" href="#">Privacy Policy</a><a class="footer__menu-column-link" href="#">Careers</a>
+              </div>
+              <div class="footer__menu-column">
+                <p class="footer__menu-column-title">More</p><a class="footer__menu-column-link" href="#">Documentation</a><a class="footer__menu-column-link" href="#">License</a><a class="footer__menu-column-link" href="#">Changelog</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>

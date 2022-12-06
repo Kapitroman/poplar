@@ -1,0 +1,34 @@
+mixin poplar-yield()
+  section.section.section--dark.section--intro.poplar-yield
+    .container
+      .poplar-yield__wrapper
+        .intro
+          h1.intro__title
+            | Yield Every Minute With <span>poplar’s yield</span> as a service software
+          p.intro__subtitle
+            | See how Poplar puts your cash to work
+          +btn({
+            href: "#",
+            text: "Open a free account"
+          }).intro__button
+        .poplar-yield__form
+          form(action="#", method="get")
+            +custom-input({
+              inputLabel: "First and Last Name:",
+              inputName: "person-name",
+            })
+            +custom-input({
+              inputLabel: "Email:",
+              inputName: "email",
+              inputType: "email"
+            })
+            +custom-input({
+              inputLabel: "Company:",
+              inputName: "person-company",
+            })
+            +btn({
+              href: "#",
+              text: "contact me"
+            }).poplar-yield__button
+            p.poplar-yield__note
+              | Submit the form and we will get in touch in the next 24 hours.

@@ -3,17 +3,12 @@
   position: relative;
 
   display: flex;
-  width: 530px;
-  padding: 14px 0 28px;
-
-  @media screen and (max-width: 767px) {
-    padding: 4px 0 48px;
-    width: 100%;
-  }
+  width: 100%;
+  padding: 0 0 15px 0;
 
   label {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     width: 100%;
 
     @media screen and (max-width: 767px) {
@@ -24,35 +19,51 @@
     input,
     textarea {
       flex-grow: 1;
-      max-width: 300px;
-      min-height: 48px;
-      margin-left: auto;
-      padding: 10px;
+      //max-width: 300px;
+      min-height: 60px;
+      //margin-left: auto;
+      padding: 15px 10px;
 
-      border: 2px solid rgba(#000000, 0.2);
-      border-radius: 5px;
+      border: 1px solid rgba($color-blue-whale, 0.1);
+      border-radius: 10px;
       outline: none;
 
+      background-color: $color-alice-blue;
+
       transition: border 0.3s ease;
+
+      font-size: 18px;
+      line-height: 28px;
 
       @media screen and (max-width: 767px) {
         max-width: unset;
         width: 100%;
+
+        min-height: 50px;
+        padding: 13px 10px;
+
+        font-size: 16px;
+        line-height: 22px;
       }
 
       &:hover {
-        border: 2px solid rgba(#000000, 0.5);
+        border: 1px solid rgba(#000000, 0.5);
       }
 
       &:focus {
-        border: 2px solid rgba(#000000, 0.8);
+        border: 1px solid rgba(#000000, 0.8);
       }
     }
   }
 
   &__label {
-    @media screen and (max-width: 767px) {
-      margin: 0 0 18px 0;
+    margin-bottom: 5px;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    @include vp-767 {
+      font-size: 14px;
     }
   }
 
@@ -75,22 +86,22 @@
   &.is-invalid {
     input,
     textarea {
-      border: 2px solid #ff1553;
+      border: 1px solid #ff1553;
 
       &:focus,
       &:hover {
-        border: 2px solid rgba(#ff1553, 0.5);
+        border: 1px solid rgba(#ff1553, 0.5);
       }
     }
   }
 
   &.is-valid {
     input {
-      border: 2px solid #22b259;
+      border: 1px solid #22b259;
 
       &:focus,
       &:hover {
-        border: 2px solid rgba(#22b259, 0.5);
+        border: 1px solid rgba(#22b259, 0.5);
       }
     }
   }

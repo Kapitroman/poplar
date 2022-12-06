@@ -2418,8 +2418,8 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 530px;
-  padding: 14px 0 28px;
+  width: 100%;
+  padding: 0 0 15px 0;
 }
 
 .custom-input label,
@@ -2427,9 +2427,10 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   width: 100%;
 }
 
@@ -2440,30 +2441,38 @@ button,
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  max-width: 300px;
-  min-height: 48px;
-  margin-left: auto;
-  padding: 10px;
-  border: 2px solid rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+  min-height: 60px;
+  padding: 15px 10px;
+  border: 1px solid rgba(18, 49, 73, 0.1);
+  border-radius: 10px;
   outline: none;
+  background-color: #f3f6fa;
   -webkit-transition: border 0.3s ease;
   -o-transition: border 0.3s ease;
   transition: border 0.3s ease;
+  font-size: 18px;
+  line-height: 28px;
 }
 
 .custom-input label input:hover,
 .custom-input label textarea:hover,
 .custom-textarea label input:hover,
 .custom-textarea label textarea:hover {
-  border: 2px solid rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .custom-input label input:focus,
 .custom-input label textarea:focus,
 .custom-textarea label input:focus,
 .custom-textarea label textarea:focus {
-  border: 2px solid rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.custom-input__label,
+.custom-textarea__label {
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .custom-input__error,
@@ -2482,7 +2491,7 @@ button,
 .custom-input.is-invalid textarea,
 .custom-textarea.is-invalid input,
 .custom-textarea.is-invalid textarea {
-  border: 2px solid #ff1553;
+  border: 1px solid #ff1553;
 }
 
 .custom-input.is-invalid input:focus,
@@ -2493,19 +2502,19 @@ button,
 .custom-textarea.is-invalid input:hover,
 .custom-textarea.is-invalid textarea:focus,
 .custom-textarea.is-invalid textarea:hover {
-  border: 2px solid rgba(255, 21, 83, 0.5);
+  border: 1px solid rgba(255, 21, 83, 0.5);
 }
 
 .custom-input.is-valid input,
 .custom-textarea.is-valid input {
-  border: 2px solid #22b259;
+  border: 1px solid #22b259;
 }
 
 .custom-input.is-valid input:focus,
 .custom-input.is-valid input:hover,
 .custom-textarea.is-valid input:focus,
 .custom-textarea.is-valid input:hover {
-  border: 2px solid rgba(34, 178, 89, 0.5);
+  border: 1px solid rgba(34, 178, 89, 0.5);
 }
 
 .custom-input .input-message,
@@ -4344,6 +4353,48 @@ button,
   text-align: center;
 }
 
+.poplar-yield__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.poplar-yield .intro {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  width: 55.85%;
+  margin-right: 7.97%;
+}
+
+.poplar-yield__form {
+  width: 36.18%;
+  padding: 35px;
+  border-radius: 25px;
+  background-color: #ffffff;
+}
+
+.poplar-yield .custom-input + .custom-input {
+  margin-top: 5px;
+}
+
+.poplar-yield__button {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.poplar-yield__note {
+  margin: 0;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -4948,6 +4999,11 @@ button,
     width: 100%;
   }
 
+  .custom-input__label,
+  .custom-textarea__label {
+    font-size: 14px;
+  }
+
   .logo.logo--header svg {
     width: 100px;
     height: 40px;
@@ -5360,15 +5416,37 @@ button,
     font-size: 10px;
     line-height: 15px;
   }
+
+  .poplar-yield__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .poplar-yield .intro {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .poplar-yield__form {
+    width: 100%;
+    padding: 30px 23px;
+    border-radius: 20px;
+  }
+
+  .poplar-yield__note {
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
 
 @media screen and (max-width: 767px) {
-  .custom-input,
-  .custom-textarea {
-    padding: 4px 0 48px;
-    width: 100%;
-  }
-
   .custom-input label,
   .custom-textarea label {
     -webkit-box-align: start;
@@ -5386,11 +5464,10 @@ button,
   .custom-textarea label textarea {
     max-width: unset;
     width: 100%;
-  }
-
-  .custom-input__label,
-  .custom-textarea__label {
-    margin: 0 0 18px 0;
+    min-height: 50px;
+    padding: 13px 10px;
+    font-size: 16px;
+    line-height: 22px;
   }
 
   .custom-input__error,
