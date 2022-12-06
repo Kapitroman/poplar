@@ -251,3 +251,11 @@
     margin-top: 40px;
   }
 }
+
+.center + .content {
+  margin-top: 60px;
+
+  @include vp-767 {
+    margin-top: 40px;
+  }
+}
