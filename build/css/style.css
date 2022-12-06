@@ -4219,6 +4219,39 @@ button,
   height: 60px;
 }
 
+.business-owners {
+  background-image: url("../img/content/backgrounds/background-owners.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 100%;
+}
+
+.business-owners .section__title-h2 {
+  max-width: 720px;
+}
+
+.business-owners__text {
+  padding-bottom: 16.44%;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 50px;
+  -moz-column-gap: 50px;
+  column-gap: 50px;
+}
+
+.business-owners p {
+  margin: 0;
+  font-weight: 500;
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.business-owners p + p {
+  margin-top: 28px;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -4617,6 +4650,23 @@ button,
   .meet-poplar .section__icons svg:last-child {
     width: 23px;
     height: 23px;
+  }
+
+  .business-owners .section__title-h2 {
+    max-width: 580px;
+  }
+
+  .business-owners__text {
+    padding-bottom: 12%;
+  }
+
+  .business-owners p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .business-owners p + p {
+    margin-top: 20px;
   }
 }
 
@@ -5150,6 +5200,17 @@ button,
   .about-us .intro {
     max-width: 340px;
   }
+
+  .business-owners {
+    background-size: 100% 175px;
+  }
+
+  .business-owners__text {
+    padding-bottom: 20%;
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -5263,6 +5324,10 @@ button,
 
   .meet-poplar .center {
     max-width: none;
+  }
+
+  .business-owners__text {
+    padding-bottom: 36%;
   }
 }
 
