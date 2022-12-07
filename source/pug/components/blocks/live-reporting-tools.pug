@@ -1,0 +1,31 @@
+mixin live-reporting-tools()
+  section.section.section--blue.live-reporting-tools
+    .container
+      .center
+        .section__icons.section__icons--vertical
+          +icon("icon-time", 70, 70)
+          .section__icons-dots
+            span
+            span
+            span
+        h2.section__title-h2 Can I watch my money 24/7?<br> <span>Live reporting tools</span>
+      .content.live-reporting-tools__wrapper
+        .live-reporting-tools__item
+          .live-reporting-tools__item-background
+          .live-reporting-tools__item-content
+            p.live-reporting-tools__item-text
+              | Easily manage accounts with customizable dashboards and show
+              | earnings with printable reports.
+            .live-reporting-tools__item-image
+              +picture("content/screens", "manage-account", "png", 676, 320, "screen 'Manage Account'")
+        .live-reporting-tools__item.live-reporting-tools__item--reverse
+          .live-reporting-tools__item-background
+          .live-reporting-tools__item-content
+            p.live-reporting-tools__item-text
+              | Show Transactions from each individual pool or all of your pools at once.
+            .live-reporting-tools__item-image
+              +picture("content/screens", "tax-withholding", "png", 373, 300, "screen 'Tax Withholding'")
+      +btn({
+        href: "#",
+        text: "Open a free account"
+      })
