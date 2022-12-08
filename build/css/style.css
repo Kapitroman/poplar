@@ -4587,6 +4587,62 @@ button,
   height: 70px;
 }
 
+.who-can-use-poplar .intro__subtitle {
+  margin-bottom: 60px;
+}
+
+.who-can-use-poplar__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 20px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 682px;
+  margin-bottom: 60px;
+}
+
+.who-can-use-poplar__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: calc((100% - 20px) / 2);
+  min-height: 100px;
+  padding: 0 30px;
+  border-radius: 25px;
+  text-align: left;
+  background-color: #f3f6fa;
+}
+
+.who-can-use-poplar__item-icon {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.who-can-use-poplar__item-icon svg {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+.who-can-use-poplar__item-text {
+  margin: 0;
+  font-family: "Arbutus Slab", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  color: #123149;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -5761,6 +5817,19 @@ button,
     width: 100%;
     margin-left: 0;
     margin-top: 40px;
+  }
+
+  .who-can-use-poplar .intro__subtitle {
+    margin-bottom: 30px;
+  }
+
+  .who-can-use-poplar__wrapper {
+    width: 280px;
+    margin-bottom: 40px;
+  }
+
+  .who-can-use-poplar__item {
+    width: 100%;
   }
 }
 
