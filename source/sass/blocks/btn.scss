@@ -16,13 +16,6 @@
 
   cursor: pointer;
   transition: opacity $trans-default;
-  /*
-  @include vp-1023 {
-    padding: 11px 25px;
-
-    font-size: 14px;
-  }
-  */
 
   &:disabled {
     opacity: 0.5;

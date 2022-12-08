@@ -1,0 +1,320 @@
+.poplar-plans {
+  background-color: $color-blue-whale-2;
+  background-image: linear-gradient(to bottom, $color-blue-whale-2 520px, $color-default-white 520px);
+
+  @include vp-1023 {
+    background-image: linear-gradient(to bottom, $color-blue-whale-2 430px, $color-default-white 430px);
+  }
+
+  @include vp-767 {
+    background-image: linear-gradient(to bottom, $color-blue-whale-2 570px, $color-default-white 570px);
+  }
+
+  .intro {
+    margin-bottom: 50px;
+
+    @include vp-767 {
+      margin-bottom: 75px;
+      max-width: 380px;
+    }
+
+    &__subtitle {
+      margin-bottom: 0;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: calc((100% - 3 * 30.51%) / 2);
+
+    @include vp-767 {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+
+  &__item {
+    width: 30.51%;
+    border-radius: 50px;
+    padding: 1.69%;
+    padding-bottom: 3.38%;
+
+    background-color: $color-alice-blue;
+    background-image: linear-gradient(to bottom, $color-blue-whale-2 297px, $color-alice-blue 297px);
+
+    @include vp-1023 {
+      border-radius: 40px;
+      background-image: linear-gradient(to bottom, $color-blue-whale-2 207px, $color-alice-blue 207px);
+    }
+
+    @include vp-767 {
+      width: 100%;
+      padding: 15px 15px 30px 15px;
+
+      background-image: linear-gradient(to bottom, $color-blue-whale-2 255px, $color-alice-blue 255px);
+    }
+  }
+
+  &__item:last-child {
+    @include vp-767 {
+      background-image: none;
+    }
+  }
+
+  &__item-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 40px;
+    padding: 15.63% 9.38% 9.38% 9.38%;
+
+    border-radius: 35px;
+
+    background-color: $color-default-white;
+    box-shadow: 0px 0px 10px rgba(19, 50, 73, 0.1);
+
+    @include vp-1023 {
+      border-radius: 30px;
+    }
+
+    @include vp-767 {
+      padding: 40px 20px 20px 20px;
+    }
+
+    .btn {
+      width: 100%;
+
+      @media (max-width: ($vp-1024 - 1px)) and (min-width: 768px) {
+        padding: 7px 15px;
+
+        font-size: 12px;
+      }
+    }
+  }
+
+  &__item-intro-icon {
+    display: flex;
+
+    min-height: 88px;
+
+    @include vp-1023 {
+      min-height: 56px;
+    }
+
+    svg {
+      display: block;
+      margin: 0 auto auto auto;
+    }
+  }
+
+  &__item:nth-child(1) {
+    .poplar-plans__item-intro-icon {
+      svg {
+        width: 55px;
+        height: 55px;
+
+        @include vp-1023 {
+          width: 45px;
+          height: 45px;
+        }
+      }
+    }
+  }
+
+  &__item:nth-child(2) {
+    .poplar-plans__item-intro-icon {
+      svg {
+        width: 60px;
+        height: 57px;
+
+        color: $color-default-white;
+
+        @include vp-1023 {
+          width: 40px;
+          height: 38px;
+        }
+      }
+    }
+  }
+
+  &__item:nth-child(3) {
+    .poplar-plans__item-intro-icon {
+      svg {
+        width: 50px;
+        height: 63px;
+
+        @include vp-1023 {
+          width: 35px;
+          height: 44px;
+        }
+      }
+    }
+  }
+
+  &__item-plan-title {
+    margin: 0;
+    margin-bottom: 40px;
+
+    font-family: $ff-arbutus;
+    font-size: 45px;
+    line-height: 57px;
+
+    color: $color-blue-whale;
+
+    @include vp-1023 {
+      margin-bottom: 25px;
+
+      font-size: 35px;
+      line-height: 44px;
+    }
+  }
+
+  &__item-plan-list-item {
+    margin-bottom: 50px;
+
+    @include vp-1023 {
+      margin-bottom: 35px;
+    }
+
+    text-align: center;
+
+    & > * + * {
+      margin-top: 40px;
+
+      @include vp-1023 {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  &__item-plan-key {
+    margin: 0;
+    margin-bottom: 2px;
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    color: $color-slate-grey;
+    text-transform: uppercase;
+
+    @include vp-1023 {
+      margin-bottom: 5px;
+
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+
+  &__item-plan-value {
+    margin: 0;
+
+    font-family: $ff-arbutus;
+    font-size: 32px;
+    line-height: 40px;
+    color: $color-blue-whale;
+
+    @include vp-1023 {
+      font-size: 22px;
+      line-height: 28px;
+    }
+  }
+
+  &__item-plan-value--fee {
+    font-size: 40px;
+    line-height: 50px;
+    color: $color-mountain-meadow;
+
+    @include vp-1023 {
+      font-size: 30px;
+      line-height: 38px;
+    }
+  }
+
+  &__item--poplar {
+    background-image: none;
+
+    @include vp-1023 {
+      background-image: none;
+    }
+
+    @include vp-767 {
+      background-image: none;
+    }
+
+    .poplar-plans__item-intro {
+      background-color: $color-blue-whale-2;
+    }
+
+    .poplar-plans__item-plan-title {
+      color: $color-default-white;
+    }
+
+    .poplar-plans__item-plan-key {
+      color: $color-heather;
+    }
+
+    .poplar-plans__item-plan-value {
+      color: $color-default-white;
+    }
+
+    .poplar-plans__item-plan-value--fee {
+      color: $color-mountain-meadow;
+    }
+  }
+
+  &__item-features-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .poplar-plans__item-features-group + .poplar-plans__item-features-group {
+    margin-top: 30px;
+
+    &::before {
+      content: "";
+
+      display: block;
+
+      width: 170px;
+      height: 1px;
+      margin-bottom: 30px;
+
+      background-color: rgba($color-blue-whale, 0.1);
+    }
+  }
+
+  &__item-features-group-title {
+    margin: 0;
+    margin-bottom: 20px;
+
+    font-weight: 600;
+    color: $color-mountain-meadow;
+    text-transform: uppercase;
+
+    @include vp-1023 {
+      font-size: 16px;
+    }
+  }
+
+  &__item-features-item {
+    margin: 0;
+
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    color: $color-arapawa;
+
+    text-align: center;
+
+    @include vp-1023 {
+      font-size: 12px;
+    }
+  }
+
+  .poplar-plans__item-features-item + .poplar-plans__item-features-item {
+    margin-top: 10px;
+  }
+}
