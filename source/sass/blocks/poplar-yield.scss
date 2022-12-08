@@ -14,6 +14,13 @@
     width: 55.85%;
     margin-right: 7.97%;
 
+    .intro__title {
+      @include vp-1023 {
+        font-size: 45px;
+        line-height: 56px;
+      }
+    }
+
     @include vp-767{
       align-items: center;
 
@@ -32,8 +39,13 @@
 
     background-color: $color-default-white;
 
+    @include vp-1023 {
+      min-width: 334px;
+    }
+
     @include vp-767 {
       width: 100%;
+      min-width: none;
       padding: 30px 23px;
       border-radius: 20px;
     }

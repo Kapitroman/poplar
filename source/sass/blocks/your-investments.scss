@@ -28,7 +28,6 @@
     flex-wrap: wrap;
     gap: 40px;
 
-    //width: 48.31%;
     width: calc((100% - 402px) * 570 / 778);
     margin-left: calc((100% - 402px) * 208 / 778);
 
@@ -92,6 +91,12 @@
 
       font-size: 12px;
       line-height: 18px;
+    }
+  }
+
+  &__item-icon {
+    svg {
+      color: $color-arapawa;
     }
   }
 

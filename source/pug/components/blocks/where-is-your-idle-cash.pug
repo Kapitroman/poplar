@@ -1,0 +1,40 @@
+mixin where-is-your-idle-cash()
+  section.section.where-is-your-idle-cash.section--light
+    .container
+      h2.section__title-h2 Where is your <span>idle cash?<span>
+      p.section__subtitle
+        | At Poplar, we define “idle money” as cash that is sitting in an account for a day,
+        | a weekend, a week, or even a year that is not invested or creating real-time value to
+        | the business.
+      .where-is-your-idle-cash__wrapper.content
+        .where-is-your-idle-cash__item
+          .where-is-your-idle-cash__item-head
+            .where-is-your-idle-cash__item-head-icon
+              +icon("icon-payroll", 45, 46)
+              span 1
+            p.where-is-your-idle-cash__item-head-title Payroll
+          p.where-is-your-idle-cash__item-text
+            | Whether it’s weekly, bi-weekly, monthly or quarterly you have money
+            | sitting idle for payroll that could be earning.
+        .where-is-your-idle-cash__item
+          .where-is-your-idle-cash__item-head
+            .where-is-your-idle-cash__item-head-icon
+              +icon("icon-inventory", 45, 48)
+              span 2
+            p.where-is-your-idle-cash__item-head-title Inventory
+          p.where-is-your-idle-cash__item-text
+            | Preparing for that next big order this quarter? Don’t wait to earn. Deposit
+            | your idle cash and watch your inventory funds grow.
+        .where-is-your-idle-cash__item
+          .where-is-your-idle-cash__item-head
+            .where-is-your-idle-cash__item-head-icon
+              +icon("icon-taxes", 45, 44)
+              span 3
+            p.where-is-your-idle-cash__item-head-title Taxes
+          p.where-is-your-idle-cash__item-text
+            | You keep money set asidefor your yearly or even quarterly taxes. It’s already going
+            | to Uncle Sam, so why not earn on it  before it’s gone.
+      +btn({
+        href: "#",
+        text: "Open a free account"
+      })

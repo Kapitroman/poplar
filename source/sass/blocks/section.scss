@@ -244,6 +244,10 @@
   }
 }
 
+.section--light + .section--light {
+  margin-top: 0;
+}
+
 .content + .btn {
   margin-top: 80px;
 
