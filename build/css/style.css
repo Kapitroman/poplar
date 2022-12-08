@@ -4773,6 +4773,108 @@ button,
   font-weight: 500;
 }
 
+.investing-is-full-time-job .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.investing-is-full-time-job .mobil-center {
+  width: 49.39%;
+}
+
+.investing-is-full-time-job__wrapper {
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -1;
+  order: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 42.71%;
+  margin-right: 7.97%;
+}
+
+.investing-is-full-time-job__item {
+  width: calc((100% - 10px) / 2);
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #a5adba;
+  background-color: #ffffff;
+}
+
+.investing-is-full-time-job__item--diagram {
+  width: 100%;
+  padding: 0;
+  aspect-ratio: 504/241;
+}
+
+.investing-is-full-time-job__item--diagram img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.investing-is-full-time-job__item-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-bottom: 2px;
+}
+
+.investing-is-full-time-job__item-title {
+  margin: 0;
+  margin-right: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.01em;
+  color: #a9b5be;
+}
+
+.investing-is-full-time-job__item-help {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.investing-is-full-time-job__item-help.focus-visible:focus {
+  opacity: 0.8;
+}
+
+.investing-is-full-time-job__item-help svg {
+  display: block;
+  width: 17px;
+  height: 17px;
+  margin: auto;
+}
+
+.investing-is-full-time-job__item-value {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #123149;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -5307,6 +5409,26 @@ button,
     margin-left: 75px;
     font-size: 14px;
     line-height: 22px;
+  }
+
+  .investing-is-full-time-job__item-title {
+    font-size: 8px;
+    line-height: 16px;
+  }
+
+  .investing-is-full-time-job__item-help {
+    width: 16px;
+    height: 16px;
+  }
+
+  .investing-is-full-time-job__item-help svg {
+    width: 13px;
+    height: 13px;
+  }
+
+  .investing-is-full-time-job__item-value {
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 
@@ -6027,6 +6149,26 @@ button,
   .where-is-your-idle-cash__item {
     width: 100%;
   }
+
+  .investing-is-full-time-job .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .investing-is-full-time-job .mobil-center {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .investing-is-full-time-job__wrapper {
+    -webkit-box-ordinal-group: initial;
+    -ms-flex-order: initial;
+    order: initial;
+    width: 100%;
+    margin-right: 0;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -6190,6 +6332,10 @@ button,
   }
 
   .momey-calculator-periods label:hover:not(.focus-visible) {
+    opacity: 0.8;
+  }
+
+  .investing-is-full-time-job__item-help:hover:not(.focus-visible) {
     opacity: 0.8;
   }
 }
