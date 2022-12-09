@@ -19,6 +19,11 @@
         font-size: 45px;
         line-height: 56px;
       }
+
+      @include vp-767 {
+        font-size: 30px;
+        line-height: 35px;
+      }
     }
 
     @include vp-767{
@@ -45,7 +50,7 @@
 
     @include vp-767 {
       width: 100%;
-      min-width: none;
+      min-width: initial;
       padding: 30px 23px;
       border-radius: 20px;
     }

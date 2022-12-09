@@ -11,6 +11,18 @@
     max-width: 660px;
   }
 
+  .section__icons {
+    svg {
+      width: 70px;
+      height: 70px;
+
+      @include vp-1023 {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+
   &__wrapper {
     width: 100%;
   }

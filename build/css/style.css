@@ -4410,6 +4410,11 @@ button,
   max-width: 660px;
 }
 
+.live-reporting-tools .section__icons svg {
+  width: 70px;
+  height: 70px;
+}
+
 .live-reporting-tools__wrapper {
   width: 100%;
 }
@@ -5066,6 +5071,159 @@ button,
   margin-top: 10px;
 }
 
+.find-your-idle-cash__top {
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.find-your-idle-cash__top-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.find-your-idle-cash__image-block {
+  width: 42.37%;
+  margin-right: 8.31%;
+}
+
+.find-your-idle-cash__image {
+  position: relative;
+  z-index: 1;
+  aspect-ratio: 500/242;
+  margin: 10.8% 0;
+}
+
+.find-your-idle-cash__image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(19, 50, 73, 0.12);
+  box-shadow: 0px 2px 4px 0px rgba(19, 50, 73, 0.12);
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.find-your-idle-cash__background {
+  position: absolute;
+  left: 0;
+  right: 64.37%;
+  top: 0;
+  bottom: 0;
+  border-radius: 0 45px 45px 0;
+  background-color: #0ecb78;
+}
+
+.find-your-idle-cash__title {
+  width: 49.32%;
+}
+
+.find-your-idle-cash .section__title-h2 {
+  max-width: 495px;
+}
+
+.find-your-idle-cash .section__subtitle {
+  max-width: 535px;
+}
+
+.find-your-idle-cash__bottom-title {
+  margin: 0;
+  margin-bottom: 80px;
+  font-family: "Arbutus Slab", "Arial", sans-serif;
+  font-size: 25px;
+  line-height: 31px;
+}
+
+.find-your-idle-cash__bottom-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+
+.find-your-idle-cash__bottom-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  width: 30%;
+}
+
+.find-your-idle-cash__bottom-item-icon {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  aspect-ratio: 1/1;
+  width: 25.42%;
+  min-width: 75px;
+  margin-right: 8.47%;
+  border-radius: 30px;
+  background-color: #133249;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(20, 51, 74, 0.0509803922);
+  box-shadow: 0px 0px 10px 0px rgba(20, 51, 74, 0.0509803922);
+}
+
+.find-your-idle-cash__bottom-item-icon svg {
+  color: #ffffff;
+}
+
+.find-your-idle-cash__bottom-item-icon svg:nth-child(1) {
+  width: 30px;
+  height: 30px;
+}
+
+.find-your-idle-cash__bottom-item-icon svg:nth-child(2) {
+  width: 40px;
+  height: 36px;
+}
+
+.find-your-idle-cash__bottom-item-icon svg:nth-child(3) {
+  width: 40px;
+  height: 39px;
+}
+
+.find-your-idle-cash__bottom-item-icon span {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  color: #ffffff;
+  font-weight: 600;
+  background-color: #0ecb78;
+}
+
+.find-your-idle-cash__bottom-item-text {
+  width: 66.11%;
+  margin: 0;
+  font-weight: 600;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -5508,6 +5666,11 @@ button,
     min-width: 334px;
   }
 
+  .live-reporting-tools .section__icons svg {
+    width: 30px;
+    height: 30px;
+  }
+
   .live-reporting-tools__item-text {
     font-size: 18px;
     line-height: 23px;
@@ -5696,6 +5859,47 @@ button,
 
   .poplar-plans__item-features-item {
     font-size: 12px;
+  }
+
+  .find-your-idle-cash__bottom-title {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .find-your-idle-cash__bottom-item-icon {
+    width: 50px;
+    min-width: 50px;
+    margin-right: 35px;
+    border-radius: 20px;
+  }
+
+  .find-your-idle-cash__bottom-item-icon svg:nth-child(1) {
+    width: 20px;
+    height: 20px;
+  }
+
+  .find-your-idle-cash__bottom-item-icon svg:nth-child(2) {
+    width: 20px;
+    height: 18px;
+  }
+
+  .find-your-idle-cash__bottom-item-icon svg:nth-child(3) {
+    width: 22px;
+    height: 22px;
+  }
+
+  .find-your-idle-cash__bottom-item-icon span {
+    top: -14px;
+    right: -14px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #ffffff;
+    font-size: 14px;
+  }
+
+  .find-your-idle-cash__bottom-item-text {
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 
@@ -6294,6 +6498,11 @@ button,
     flex-direction: column;
   }
 
+  .poplar-yield .intro .intro__title {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
   .poplar-yield .intro {
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -6306,7 +6515,7 @@ button,
 
   .poplar-yield__form {
     width: 100%;
-    min-width: none;
+    min-width: initial;
     padding: 30px 23px;
     border-radius: 20px;
   }
@@ -6472,6 +6681,73 @@ button,
 
   .poplar-plans__item--poplar {
     background-image: none;
+  }
+
+  .find-your-idle-cash__top {
+    margin-bottom: 50px;
+  }
+
+  .find-your-idle-cash__top-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: initial;
+    -ms-flex-align: initial;
+    align-items: initial;
+  }
+
+  .find-your-idle-cash__image-block {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+
+  .find-your-idle-cash__image {
+    width: 240px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+  }
+
+  .find-your-idle-cash__image img {
+    border-radius: 15px;
+  }
+
+  .find-your-idle-cash__background {
+    top: auto;
+    right: 25%;
+    height: 176px;
+    border-radius: 0 25px 25px 0;
+  }
+
+  .find-your-idle-cash__title {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .find-your-idle-cash__bottom-title {
+    margin-bottom: 46px;
+  }
+
+  .find-your-idle-cash__bottom-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .find-your-idle-cash__bottom-item {
+    width: 100%;
+  }
+
+  .find-your-idle-cash__bottom-item-text {
+    width: calc(100% - 85px);
   }
 }
 

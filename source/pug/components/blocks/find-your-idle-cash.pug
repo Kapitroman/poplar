@@ -1,0 +1,37 @@
+mixin find-your-idle-cash()
+  section.section.find-your-idle-cash
+    .find-your-idle-cash__top
+      .container
+        .find-your-idle-cash__top-wrapper
+          .find-your-idle-cash__image-block
+            .find-your-idle-cash__background
+            .find-your-idle-cash__image
+              +picture("content/screens", "screen-idle-cash-2", "png", 500, 242, "screen Idle Cash")
+          .find-your-idle-cash__title
+            h2.section__title-h2 <span>Find your idle cash:</span> The Idle Cash Scanner
+            p.section__subtitle
+              | No need to hire a treasury manager or dig into your books.
+              | Find out how much idle money you can invest instantly
+              | with Poplar’s idle Cash Scanner tool.
+    .find-your-idle-cash__bottom
+      .container
+        p.find-your-idle-cash__bottom-title Here’s How it works:
+        .find-your-idle-cash__bottom-wrapper
+          .find-your-idle-cash__bottom-item
+            .find-your-idle-cash__bottom-item-icon
+              +icon("icon-connect", 30, 30)
+              span 1
+            p.find-your-idle-cash__bottom-item-text
+              | Connect any accounts you’d like to be scanned.
+          .find-your-idle-cash__bottom-item
+            .find-your-idle-cash__bottom-item-icon
+              +icon("icon-report", 40, 36)
+              span 2
+            p.find-your-idle-cash__bottom-item-text
+              | See how much of your cash is idle and losing value.
+          .find-your-idle-cash__bottom-item
+            .find-your-idle-cash__bottom-item-icon
+              +icon("icon-brain", 40, 39)
+              span 3
+            p.find-your-idle-cash__bottom-item-text
+              | Poplar’s AI will show you how much you can safely invest and for how long.
