@@ -14,7 +14,7 @@ mixin header(headerMods, currentUrl)
         text: "Product"
       },
       {
-        href: "solution.html",
+        href: "solutions.html",
         text: "Solutions"
       },
       {
@@ -33,7 +33,7 @@ mixin header(headerMods, currentUrl)
               span.visually-hidden Logo Poplar
               +icon("icon-logo", 180, 72)
           else
-            a.logo(href="index.html", aria-label="go on mainpage")
+            a.logo.logo--header(href="index.html", aria-label="go on mainpage")
               span.visually-hidden Logo Poplar
               +icon("icon-logo", 180, 72)
           button.menu-toggle.btn-reset(type="button", aria-label="toggle view menu", aria-pressed="false")
