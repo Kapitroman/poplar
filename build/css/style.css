@@ -5224,6 +5224,62 @@ button,
   font-weight: 600;
 }
 
+.losing-billions-in-free-money {
+  position: relative;
+}
+
+.losing-billions-in-free-money .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.losing-billions-in-free-money .section__title-h2 {
+  width: 40.93%;
+}
+
+.losing-billions-in-free-money .section__title-h2 span {
+  color: #ec3b46;
+}
+
+.losing-billions-in-free-money__image-block {
+  width: 49.32%;
+  padding: 45px 0;
+  margin-right: 9.75%;
+}
+
+.losing-billions-in-free-money__background {
+  position: absolute;
+  left: 0;
+  right: 50.55%;
+  bottom: 130px;
+  height: 450px;
+  border-radius: 0 45px 45px 0;
+  background-color: #e8f3ff;
+  background-image: url("../img/content/backgrounds/background-idle-cash-to-work.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100% 100%;
+}
+
+.losing-billions-in-free-money__image {
+  position: relative;
+  z-index: 2;
+  width: 383px;
+  height: 360px;
+}
+
+.losing-billions-in-free-money__image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 45px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -5900,6 +5956,24 @@ button,
   .find-your-idle-cash__bottom-item-text {
     font-size: 14px;
     line-height: 22px;
+  }
+
+  .losing-billions-in-free-money__image-block {
+    padding: 20px 0 20px 10%;
+  }
+
+  .losing-billions-in-free-money__background {
+    height: 190px;
+    border-radius: 0 25px 25px 0;
+  }
+
+  .losing-billions-in-free-money__image {
+    width: 153px;
+    height: 145px;
+  }
+
+  .losing-billions-in-free-money__image img {
+    border-radius: 25px;
   }
 }
 
@@ -6749,6 +6823,31 @@ button,
   .find-your-idle-cash__bottom-item-text {
     width: calc(100% - 85px);
   }
+
+  .losing-billions-in-free-money .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .losing-billions-in-free-money .section__title-h2 {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .losing-billions-in-free-money__image-block {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .losing-billions-in-free-money__background {
+    right: 100px;
+    bottom: 50px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -6860,6 +6959,10 @@ button,
   .business-owners__text {
     padding-bottom: 36%;
   }
+
+  .losing-billions-in-free-money__background {
+    right: 20px;
+  }
 }
 
 @media (max-width: 374px) {
@@ -6930,5 +7033,13 @@ button,
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .get-free-idle-cash-report__background {
     background-image: url("../img/content/backgrounds/background-report@2x.png");
+  }
+
+  .business-owners {
+    background-image: url("../img/content/backgrounds/background-owners@2x.png");
+  }
+
+  .losing-billions-in-free-money__background {
+    background-image: url("../img/content/backgrounds/background-idle-cash-to-work@2x.png");
   }
 }

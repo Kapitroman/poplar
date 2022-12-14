@@ -8,6 +8,10 @@
     background-size: 100% 175px;
   }
 
+  @include retina {
+    background-image: url("../img/content/backgrounds/background-owners@2x.png");
+  }
+
   .section__title-h2 {
     max-width: 720px;
 
