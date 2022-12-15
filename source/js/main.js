@@ -6,6 +6,7 @@ import {initBurgerMenu} from './modules/init-burger-menu';
 import {initSliderAmountCash} from './modules/init-slider-amount-cash';
 import {initMoneyCalculatorPeriodsSwiper} from './modules/init-money-calculator-periods-swiper';
 import {initReviewsSlider} from './modules/init-reviews-slider';
+import {initClientsExperiencesSlider} from './modules/init-clients-experiences-slider';
 
 // ---------------------------------
 
@@ -32,6 +33,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initSliderAmountCash();
     initMoneyCalculatorPeriodsSwiper();
     initReviewsSlider();
+    initClientsExperiencesSlider();
   });
 });
 

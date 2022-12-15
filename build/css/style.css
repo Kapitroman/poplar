@@ -5380,6 +5380,38 @@ button,
   height: auto;
 }
 
+.clients-experiences .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.clients-experiences .section__title-h2 {
+  text-align: center;
+}
+
+.clients-experiences__slider {
+  width: 70.42%;
+  padding-left: 50px;
+}
+
+.clients-experiences__wrapper {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.clients-experiences__slide.swiper-slide {
+  height: auto;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -6503,6 +6535,10 @@ button,
     margin-top: 15px;
   }
 
+  .stop-warring--not-screen {
+    background-image: none;
+  }
+
   .stop-warring--not-screen .stop-warring__wrapper-head-section {
     padding-bottom: 50px;
   }
@@ -7006,6 +7042,19 @@ button,
   }
 
   .what-say-about-us .what-say-about-us__slider.swiper {
+    overflow: visible;
+  }
+
+  .clients-experiences__slider {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .clients-experiences .container {
+    overflow: hidden;
+  }
+
+  .clients-experiences .clients-experiences__slider.swiper {
     overflow: visible;
   }
 }

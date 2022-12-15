@@ -1,0 +1,42 @@
+.clients-experiences {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section__title-h2 {
+    text-align: center;
+  }
+
+  &__slider {
+    width: 70.42%;
+    padding-left: 50px;
+
+    @include vp-767 {
+      width: 100%;
+      padding-left: 0;
+    }
+  }
+
+  &__wrapper {
+    margin: 0;
+    padding-left: 0;
+
+    list-style: none;
+  }
+
+  &__slide.swiper-slide {
+    height: auto;
+  }
+
+  @include vp-767 {
+    .container {
+      overflow: hidden;
+    }
+
+    .clients-experiences__slider.swiper {
+      overflow: visible;
+    }
+  }
+}

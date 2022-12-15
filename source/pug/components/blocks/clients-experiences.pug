@@ -1,0 +1,13 @@
+mixin clients-experiences()
+  section.section.section--light.clients-experiences
+    .container
+      .section__title-h2 More <span>Client’s Experiences</span> With Us
+      .clients-experiences__slider.content.swiper
+        ul.clients-experiences__wrapper.swiper-wrapper
+          each item in reviewers
+            li.clients-experiences__slide.swiper-slide
+              +card-review(item)
+      +btn({
+        text: "all Testimonials",
+        href: "#"
+      })

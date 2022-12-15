@@ -63,6 +63,10 @@
 .stop-warring--not-screen {
   background-image: none;
 
+  @include vp-767 {
+    background-image: none;
+  }
+
   .stop-warring__wrapper-head-section {
     margin-bottom: 0;
     padding-bottom: 80px;
