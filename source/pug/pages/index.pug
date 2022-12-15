@@ -9,6 +9,46 @@ block variables
   - const footerMods = ""
   - const currentUrl = "index.html" //- для остальных страниц пишем пустую строку или индекс активного headerLinks
 
+  -
+    const reviewers = [
+     {
+      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      image: ["content/persons", "anna", "jpg"],
+      name: "Anna Johnson",
+      company: "Company LLC."
+     },
+     {
+      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      image: ["content/persons", "john", "jpg"],
+      name: "John Smith",
+      company: "Company LLC."
+     },
+     {
+      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      image: ["content/persons", "jane", "jpg"],
+      name: "Jane Jones",
+      company: "Company LLC."
+     },
+     {
+      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      image: ["content/persons", "anna", "jpg"],
+      name: "Anna Johnson",
+      company: "Company LLC."
+     },
+     {
+      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      image: ["content/persons", "john", "jpg"],
+      name: "John Smith",
+      company: "Company LLC."
+     },
+     {
+      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      image: ["content/persons", "jane", "jpg"],
+      name: "Jane Jones",
+      company: "Company LLC."
+     },
+    ]
+
 block main
   main
     //- на странице запрещен "голый" код
@@ -17,6 +57,7 @@ block main
     +inflation-value()
     +software-service()
     +earn-more-with-poplar()
+    +what-say-about-us(reviewers)
     +how-to-earn()
     +hey-poplar()
     +how-is-poplar-different()

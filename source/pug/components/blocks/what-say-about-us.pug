@@ -1,0 +1,16 @@
+mixin what-say-about-us()
+  section.section.section--light.what-say-about-us
+    .container
+      .center
+        .section__icons.section__icons--vertical
+          +icon("icon-reviews", 70, 69)
+          .section__icons-dots
+            span
+            span
+            span
+        h2.section__title-h2 What our <span>client’s</span> say About Us
+      .what-say-about-us__slider.content.swiper
+        ul.what-say-about-us__wrapper.swiper-wrapper
+          each item in reviewers
+            li.what-say-about-us__slide.swiper-slide
+              +card-review(item)

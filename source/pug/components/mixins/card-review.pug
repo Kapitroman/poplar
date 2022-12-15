@@ -1,0 +1,14 @@
+mixin card-review(data = {})
+  - const text = data.text ? data.text : "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+  - const image = data.image ? data.image : ["content/persons", "john", "jpg"]
+  - const name = data.name ? data.name : "John Smith"
+  - const company = data.company ? data.company : "Company LLC."
+  .card-review&attributes(attributes)
+    .card-review__background
+    p.card-review__text= text
+    .card-review__author
+      .card-review__author-image
+        +picture(image[0], image[1], image[3], 70, 70, "photo person")
+      .card-review__author-info
+        p.card-review__author-name= name
+        p.card-review__author-company= company
