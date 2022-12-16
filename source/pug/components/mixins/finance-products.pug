@@ -1,0 +1,7 @@
+mixin finance-products(title, products)
+  .finance-products
+    p.finance-products__title= title
+    .finance-products__list
+      each item in products
+        a(class = `finance-products__item finance-products__item--${item.addClass}`, href="#")
+          +picture(item.path, item.name, item.format, item.width, item.height, item.alt)

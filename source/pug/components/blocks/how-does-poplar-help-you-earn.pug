@@ -1,0 +1,33 @@
+mixin how-does-poplar-help-you-earn()
+  section.section.section--dark.how-does-poplar-help-you-earn
+    .container
+      .center
+        .section__icons.section__icons--vertical
+          +icon("icon-business", 70, 70)
+          .section__icons-dots
+            span
+            span
+            span
+        p.section__subtitle.section__subtitle--upper The Yield Marketplace
+        h2.section__title-h2 How does Poplar <span>help you earn?</span>
+      .how-does-poplar-help-you-earn__wrapper.content
+        .how-does-poplar-help-you-earn__content
+          .how-does-poplar-help-you-earn__text
+            p.section__subtitle
+              | Poplar connects you to thousands of products, so you can pick and choose
+              | where your money goes.
+            p.section__subtitle
+              | Gain one-click access to any combination of products and add
+              | more as we regularly expand the marketplace.
+          .how-does-poplar-help-you-earn__features
+            .how-does-poplar-help-you-earn__feature-item
+              +check-point().check-point--different
+              p.how-does-poplar-help-you-earn__feature-item-text Transparent Access
+            .how-does-poplar-help-you-earn__feature-item
+              +check-point().check-point--different
+              p.how-does-poplar-help-you-earn__feature-item-text No Black Box
+            .how-does-poplar-help-you-earn__feature-item
+              +check-point().check-point--different
+              p.how-does-poplar-help-you-earn__feature-item-text Combine Traditional & DeFi
+        +finance-products("Traditional Options", moneyProducts[0])
+        +finance-products("Decentralized Finance", moneyProducts[1])

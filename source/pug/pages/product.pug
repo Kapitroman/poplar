@@ -9,10 +9,90 @@ block variables
   - const footerMods = ""
   - const currentUrl = "product.html" //- для остальных страниц пишем пустую строку или индекс активного headerLinks
 
+  -
+    const moneyProducts = [
+      [
+        {
+          addClass: "sizes-1",
+          path: "content/finance-products",
+          name: "fidelity",
+          format: "png",
+          width: 154,
+          height: 33,
+          alt: "logo finance product",
+        },
+        {
+          addClass: "sizes-2",
+          path: "content/finance-products",
+          name: "vanguard",
+          format: "png",
+          width: 150,
+          height: 32,
+          alt: "logo finance product",
+        },
+        {
+          addClass: "sizes-3",
+          path: "content/finance-products",
+          name: "advisors",
+          format: "png",
+          width: 144,
+          height: 45,
+          alt: "logo finance product",
+        },
+        {
+          addClass: "sizes-4",
+          path: "content/finance-products",
+          name: "spdr",
+          format: "png",
+          width: 90,
+          height: 25,
+          alt: "logo finance product",
+        }
+      ],
+      [
+        {
+          addClass: "sizes-5",
+          path: "content/finance-products",
+          name: "aave",
+          format: "png",
+          width: 110,
+          height: 42,
+          alt: "logo finance product",
+        },
+        {
+          addClass: "sizes-6",
+          path: "content/finance-products",
+          name: "compound",
+          format: "png",
+          width: 151,
+          height: 40,
+          alt: "logo finance product",
+        },
+        {
+          addClass: "sizes-7",
+          path: "content/finance-products",
+          name: "maple",
+          format: "png",
+          width: 136,
+          height: 30,
+          alt: "logo finance product",
+        },
+        {
+          addClass: "sizes-8",
+          path: "content/finance-products",
+          name: "alchemy",
+          format: "png",
+          width: 150,
+          height: 32,
+          alt: "logo finance product",
+        },
+      ]
+    ]
 block main
   main
     +poplar-yield()
     +find-your-idle-cash()
+    +how-does-poplar-help-you-earn(moneyProducts)
     +live-reporting-tools()
     +your-investments()
     +stop-warring(true)

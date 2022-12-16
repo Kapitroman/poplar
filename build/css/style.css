@@ -3211,6 +3211,10 @@ button,
   margin-top: 30px;
 }
 
+.section__icons + .section__subtitle {
+  margin-top: 30px;
+}
+
 .content + .section__title-h2 {
   margin-top: 80px;
 }
@@ -3617,6 +3621,107 @@ button,
   height: 100%;
   border-radius: 45px;
   background-color: #f3f6fa;
+}
+
+.finance-products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 45px;
+  padding: 50px;
+  background-color: #ffffff;
+}
+
+.finance-products__title {
+  max-width: 180px;
+  margin: 0;
+  margin-bottom: 52px;
+  font-family: "Arbutus Slab", "Arial", sans-serif;
+  font-size: 25px;
+  line-height: 31px;
+  text-align: center;
+}
+
+.finance-products__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.finance-products__list > * + * {
+  margin-top: 40px;
+}
+
+.finance-products__item {
+  display: block;
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.finance-products__item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.finance-products__item.focus-visible:focus {
+  opacity: 0.8;
+}
+
+.finance-products__item--sizes-1 {
+  width: 154px;
+  height: 33px;
+}
+
+.finance-products__item--sizes-2 {
+  width: 150px;
+  height: 32px;
+}
+
+.finance-products__item--sizes-3 {
+  width: 144px;
+  height: 45px;
+}
+
+.finance-products__item--sizes-4 {
+  width: 90px;
+  height: 25px;
+}
+
+.finance-products__item--sizes-5 {
+  width: 110px;
+  height: 42px;
+}
+
+.finance-products__item--sizes-6 {
+  width: 151px;
+  height: 40px;
+}
+
+.finance-products__item--sizes-7 {
+  width: 136px;
+  height: 30px;
+}
+
+.finance-products__item--sizes-8 {
+  width: 150px;
+  height: 32px;
 }
 
 .inflation-proof-cash {
@@ -5412,6 +5517,54 @@ button,
   height: auto;
 }
 
+.how-does-poplar-help-you-earn .section__icons svg {
+  width: 70px;
+  height: 70px;
+}
+
+.how-does-poplar-help-you-earn__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 66px;
+}
+
+.how-does-poplar-help-you-earn__wrapper > * {
+  width: calc((100% - 132px) / 3);
+}
+
+.how-does-poplar-help-you-earn__content {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.how-does-poplar-help-you-earn__text {
+  margin-bottom: 30px;
+}
+
+.how-does-poplar-help-you-earn__feature-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.how-does-poplar-help-you-earn .check-point {
+  margin-right: 15px;
+}
+
+.how-does-poplar-help-you-earn__feature-item-text {
+  margin: 0;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.how-does-poplar-help-you-earn__feature-item + .how-does-poplar-help-you-earn__feature-item {
+  margin-top: 25px;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -5642,6 +5795,60 @@ button,
     left: -20px;
     width: calc(100% + 40px);
     border-radius: 30px;
+  }
+
+  .finance-products {
+    border-radius: 35px;
+    padding: 30px;
+  }
+
+  .finance-products__title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .finance-products__list > * + * {
+    margin-top: 30px;
+  }
+
+  .finance-products__item--sizes-1 {
+    width: 130px;
+    height: 27px;
+  }
+
+  .finance-products__item--sizes-2 {
+    width: 127px;
+    height: 27px;
+  }
+
+  .finance-products__item--sizes-3 {
+    width: 122px;
+    height: 38px;
+  }
+
+  .finance-products__item--sizes-4 {
+    width: 75px;
+    height: 21px;
+  }
+
+  .finance-products__item--sizes-5 {
+    width: 95px;
+    height: 36px;
+  }
+
+  .finance-products__item--sizes-6 {
+    width: 130px;
+    height: 34px;
+  }
+
+  .finance-products__item--sizes-7 {
+    width: 117px;
+    height: 26px;
+  }
+
+  .finance-products__item--sizes-8 {
+    width: 129px;
+    height: 27px;
   }
 
   .inflation-proof-cash__features {
@@ -6149,6 +6356,24 @@ button,
     width: 32px;
     height: 32px;
   }
+
+  .how-does-poplar-help-you-earn .section__icons svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .how-does-poplar-help-you-earn__wrapper {
+    gap: 35px;
+  }
+
+  .how-does-poplar-help-you-earn__wrapper > * {
+    width: calc((100% - 70px) / 3);
+  }
+
+  .how-does-poplar-help-you-earn__feature-item-text {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -6387,6 +6612,10 @@ button,
   }
 
   .section__icons + .section__title-h2 {
+    margin-top: 20px;
+  }
+
+  .section__icons + .section__subtitle {
     margin-top: 20px;
   }
 
@@ -7057,6 +7286,25 @@ button,
   .clients-experiences .clients-experiences__slider.swiper {
     overflow: visible;
   }
+
+  .how-does-poplar-help-you-earn__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .how-does-poplar-help-you-earn__wrapper > * {
+    width: 100%;
+  }
+
+  .how-does-poplar-help-you-earn__text {
+    margin-bottom: 40px;
+  }
+
+  .how-does-poplar-help-you-earn__text .section__subtitle {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -7231,6 +7479,10 @@ button,
   }
 
   .momey-calculator-periods label:hover:not(.focus-visible) {
+    opacity: 0.8;
+  }
+
+  .finance-products__item:hover:not(.focus-visible) {
     opacity: 0.8;
   }
 
