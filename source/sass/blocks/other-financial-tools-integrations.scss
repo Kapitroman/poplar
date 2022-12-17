@@ -1,0 +1,93 @@
+.other-financial-tools-integrations {
+  .container {
+    display: flex;
+    align-items: center;
+
+    padding-top: 71px;
+
+    @include vp-767 {
+      flex-direction: column;
+      align-items: initial;
+
+      padding-top: 0;
+    }
+  }
+
+  &__tools-block {
+    position: relative;
+
+    order: -1;
+
+    width: 49.24%;
+    margin-right: 9.67%;
+
+    @include vp-1279 {
+      flex-shrink: 0;
+
+      width: 429px;
+      margin-right: calc((100% - 429px) * 9.67 / (40.93 + 9.67));
+    }
+
+    @include vp-767 {
+      order: initial;
+
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+
+  &__intro {
+    width: 40.93%;
+
+    @include vp-1279 {
+      width: calc((100% - 429px) * 40.93 / (40.93 + 9.67));
+    }
+
+    @include vp-767 {
+      width: 100%;
+
+      margin-bottom: 40px;
+    }
+  }
+
+  &__tools-title {
+    position: absolute;
+    top: -71px;
+
+    margin: 0;
+
+    font-family: $ff-arbutus;
+    font-size: 25px;
+    line-height: 31px;
+    color: $color-blue-whale;
+
+    @include vp-1023 {
+      font-size: 18px;
+      line-height: 23px;
+    }
+
+    @include vp-767 {
+      position: static;
+
+      margin-bottom: 40px;
+    }
+  }
+
+  &__tools-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    @include vp-1279 {
+      gap: 15px;
+    }
+  }
+
+  .financial-tool {
+    width: calc((100% - 80px) / 3);
+
+    @include vp-1279 {
+      width: 132px;
+    }
+  }
+}

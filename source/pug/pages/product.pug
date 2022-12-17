@@ -88,6 +88,35 @@ block variables
         },
       ]
     ]
+
+  -
+    const financialTools = [
+      {
+        icon: "icon-qb",
+        text: "Quickbooks",
+      },
+      {
+        icon: "icon-facebookads",
+        text: "Facebook ads",
+      },
+      {
+        icon: "icon-xero",
+        text: "Xero",
+      },
+      {
+        icon: "icon-shopify",
+        text: "Shopify",
+      },
+      {
+        icon: "icon-googleads",
+        text: "Google ads",
+      },
+      {
+        icon: "icon-manymore",
+        text: "And many more",
+      },
+    ]
+
 block main
   main
     +poplar-yield()
@@ -95,6 +124,7 @@ block main
     +how-does-poplar-help-you-earn(moneyProducts)
     +live-reporting-tools()
     +your-investments()
+    +other-financial-tools-integrations(financialTools)
     +stop-warring(true)
 
 block modals

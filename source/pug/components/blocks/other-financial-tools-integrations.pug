@@ -1,0 +1,13 @@
+mixin other-financial-tools-integrations()
+  section.section.section--light.other-financial-tools-integrations
+    .container
+      .other-financial-tools-integrations__intro
+        h2.section__title-h2 Can I connect other financial tools? <span>Integrations</span>
+        p.section__subtitle
+          | Poplar can integrate with a variety of your business
+          | tools, so you can set up automation triggers and rules.
+      .other-financial-tools-integrations__tools-block
+        p.other-financial-tools-integrations__tools-title Poplar works with:
+        .other-financial-tools-integrations__tools-list
+          each item in financialTools
+            +financial-tool(item.icon, item.text)

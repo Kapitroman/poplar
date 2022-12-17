@@ -3724,6 +3724,43 @@ button,
   height: 32px;
 }
 
+.financial-tool {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: 167px;
+  min-height: 190px;
+  border-radius: 35px;
+  padding: 40px 20px 25px 20px;
+  text-align: center;
+  background-color: #f3f6fa;
+}
+
+.financial-tool__icon {
+  margin-bottom: 20px;
+}
+
+.financial-tool__icon svg {
+  display: block;
+  width: 60px;
+  height: 60px;
+}
+
+.financial-tool__text {
+  min-height: 44px;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
 .inflation-proof-cash {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(67%, #133249), color-stop(67%, #ffffff));
   background: -o-linear-gradient(top, #133249 67%, #ffffff 67%);
@@ -5565,6 +5602,52 @@ button,
   margin-top: 25px;
 }
 
+.other-financial-tools-integrations .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 71px;
+}
+
+.other-financial-tools-integrations__tools-block {
+  position: relative;
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -1;
+  order: -1;
+  width: 49.24%;
+  margin-right: 9.67%;
+}
+
+.other-financial-tools-integrations__intro {
+  width: 40.93%;
+}
+
+.other-financial-tools-integrations__tools-title {
+  position: absolute;
+  top: -71px;
+  margin: 0;
+  font-family: "Arbutus Slab", "Arial", sans-serif;
+  font-size: 25px;
+  line-height: 31px;
+  color: #123149;
+}
+
+.other-financial-tools-integrations__tools-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.other-financial-tools-integrations .financial-tool {
+  width: calc((100% - 80px) / 3);
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -5666,6 +5749,46 @@ button,
   .money-calculator-item--poplar .money-calculator-item__value--amount {
     font-size: 30px;
     line-height: 38px;
+  }
+
+  .financial-tool {
+    min-height: 150px;
+    border-radius: 25px;
+    padding: 30px 25px;
+  }
+
+  .financial-tool__icon {
+    margin-bottom: 15px;
+  }
+
+  .financial-tool__icon svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .financial-tool__text {
+    min-height: 36px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .other-financial-tools-integrations__tools-block {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 429px;
+    margin-right: calc((100% - 429px) * 9.67 / 50.6);
+  }
+
+  .other-financial-tools-integrations__intro {
+    width: calc((100% - 429px) * 40.93 / 50.6);
+  }
+
+  .other-financial-tools-integrations__tools-list {
+    gap: 15px;
+  }
+
+  .other-financial-tools-integrations .financial-tool {
+    width: 132px;
   }
 }
 
@@ -6373,6 +6496,11 @@ button,
   .how-does-poplar-help-you-earn__feature-item-text {
     font-size: 14px;
     line-height: 22px;
+  }
+
+  .other-financial-tools-integrations__tools-title {
+    font-size: 18px;
+    line-height: 23px;
   }
 }
 
@@ -7304,6 +7432,35 @@ button,
 
   .how-does-poplar-help-you-earn__text .section__subtitle {
     text-align: center;
+  }
+
+  .other-financial-tools-integrations .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: initial;
+    -ms-flex-align: initial;
+    align-items: initial;
+    padding-top: 0;
+  }
+
+  .other-financial-tools-integrations__tools-block {
+    -webkit-box-ordinal-group: initial;
+    -ms-flex-order: initial;
+    order: initial;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .other-financial-tools-integrations__intro {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .other-financial-tools-integrations__tools-title {
+    position: static;
+    margin-bottom: 40px;
   }
 }
 
