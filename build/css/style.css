@@ -6954,10 +6954,7 @@ button,
   }
 
   .how-to-earn__content-item {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    display: block;
   }
 
   .how-to-earn__content-item:nth-child(odd) .how-to-earn__content-item-text {
