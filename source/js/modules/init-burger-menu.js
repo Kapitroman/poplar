@@ -9,35 +9,29 @@ const initBurgerMenu = () => {
   const menuNav = header.querySelector('.main-nav');
   const menuToggle = header.querySelector('.menu-toggle');
 
-  const closeMenu = () => {
-    menuToggle.ariaPressed = 'false';
-    header.classList.remove('is-open-menu');
-    //header.classList.add('is-closed');
-    menuNav.style.setProperty('height', '0');
-    //menuNav.removeEventListener('click', clickOnList);
-    //window.scrollLock.enableScrolling();
-  };
-  /*
-  const clickOnList = (evt) => {
-    if (evt.target.closest('a')) {
-      closeMenu();
+  const returnHeightAuto = () => {
+    if (menuNav.style.height !== '0px') {
+      menuNav.style.setProperty('height', 'auto');
     }
+  }
+
+  const closeMenu = () => {
+    menuToggle.setAttribute('aria-expanded', false);
+    header.classList.remove('is-open-menu');
+    menuNav.style.setProperty('height', '0');
+    window.scrollLock.enableScrolling();
   };
-  */
+
   const openMenu = () => {
-    menuToggle.ariaPressed = 'true';
-    //header.classList.remove('is-closed');
-
+    menuToggle.setAttribute('aria-expanded', true);
     const height = menuNav.scrollHeight;
-    menuNav.style.setProperty('height', height + 'px');
+    menuNav.style.setProperty('height', `${height}px`);
     header.classList.add('is-open-menu');
-
-    //menuNav.addEventListener('click', clickOnList);
-    //window.scrollLock.disableScrolling();
+    window.scrollLock.disableScrolling();
   };
 
   const clickOnMenu = () => {
-    if (menuToggle.ariaPressed === 'true') {
+    if (menuToggle.getAttribute('aria-expanded') === 'true') {
       closeMenu();
     } else {
       openMenu();
@@ -46,13 +40,15 @@ const initBurgerMenu = () => {
 
   const breakpointChecker = () => {
     if (breakpoint.matches) {
-      if (menuToggle.ariaPressed === 'true') {
+      if (menuToggle.getAttribute('aria-expanded') === 'true') {
         closeMenu();
+        menuNav.removeEventListener('transitionend', returnHeightAuto);
       }
       menuNav.style.setProperty('height', 'auto');
     } else {
-      menuToggle.addEventListener('click', clickOnMenu);
       menuNav.style.setProperty('height', '0');
+      menuToggle.addEventListener('click', clickOnMenu);
+      menuNav.addEventListener('transitionend', returnHeightAuto);
     }
   };
 

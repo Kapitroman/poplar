@@ -36,12 +36,12 @@ mixin header(headerMods, currentUrl)
             a.logo.logo--header(href="index.html", aria-label="go on mainpage")
               span.visually-hidden Logo Poplar
               +icon("icon-logo", 180, 72)
-          button.menu-toggle.btn-reset(type="button", aria-label="toggle view menu", aria-pressed="false")
+          button.menu-toggle.btn-reset(type="button", aria-label="toggle view menu", aria-expanded="false", aria-controls="menu-list")
             span.menu-toggle__line.menu-toggle__line--top
             span.menu-toggle__line.menu-toggle__line--center
             span.menu-toggle__line.menu-toggle__line--bottom
         nav.main-nav
-          ul.main-nav__list
+          ul.main-nav__list(id="menu-list")
               each link in headerLinks
                 - const activeState = currentUrl === link.href
                 li.main-nav__item
