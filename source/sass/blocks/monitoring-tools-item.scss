@@ -1,0 +1,75 @@
+.monitoring-tools-item {
+  display: flex;
+  align-items: center;
+
+  border-radius: 20px;
+  padding: 28px;
+
+  color: $color-blue-whale;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+
+  background-color: $color-default-white;
+
+  @include vp-1023 {
+    border-radius: 15px;
+    padding: 20px;
+
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  &__name {
+    display: flex;
+    align-items: center;
+
+    width: 24.32%;
+    padding-right: 20px;
+  }
+
+  &__name-icon {
+    flex-shrink: 0;
+
+    width: 24px;
+    height: 24px;
+    margin-right: 11px;
+
+    @include vp-1023 {
+      width: 18px;
+      height: 18px;
+      margin-right: 7px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+    }
+  }
+
+  &__token {
+    width: 19.68%;
+  }
+
+  &__crypto {
+    width: 23.68%;
+  }
+
+  &__persent {
+    width: 16.8%;
+  }
+
+  &__total {
+    width: 15.52%;
+
+    text-align: right;
+
+    color: $color-mountain-meadow;
+  }
+}

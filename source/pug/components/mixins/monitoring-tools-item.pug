@@ -1,0 +1,10 @@
+mixin monitoring-tools-item(tool)
+  .monitoring-tools-item
+    .monitoring-tools-item__name
+      .monitoring-tools-item__name-icon
+        +picture(tool.icon.path, tool.icon.name, tool.icon.format, tool.icon.width, tool.icon.height, tool.icon.alt)
+      p.monitoring-tools-item__name-title= tool.name
+    p.monitoring-tools-item__token= tool.token
+    p.monitoring-tools-item__crypto= tool.crypto
+    p.monitoring-tools-item__persent= tool.persent
+    p.monitoring-tools-item__total= tool.total

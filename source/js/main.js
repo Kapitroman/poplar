@@ -7,6 +7,7 @@ import {initSliderAmountCash} from './modules/init-slider-amount-cash';
 import {initMoneyCalculatorPeriodsSwiper} from './modules/init-money-calculator-periods-swiper';
 import {initReviewsSlider} from './modules/init-reviews-slider';
 import {initClientsExperiencesSlider} from './modules/init-clients-experiences-slider';
+//import {initMonitoringToolsSwiper} from './modules/init-monitoring-tools-swiper';
 
 // ---------------------------------
 
@@ -34,6 +35,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initMoneyCalculatorPeriodsSwiper();
     initReviewsSlider();
     initClientsExperiencesSlider();
+    //initMonitoringToolsSwiper();
   });
 });
 

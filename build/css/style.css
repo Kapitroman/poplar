@@ -3764,6 +3764,70 @@ button,
   line-height: 22px;
 }
 
+.monitoring-tools-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 20px;
+  padding: 28px;
+  color: #123149;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  background-color: #ffffff;
+}
+
+.monitoring-tools-item p {
+  margin: 0;
+}
+
+.monitoring-tools-item__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 24.32%;
+  padding-right: 20px;
+}
+
+.monitoring-tools-item__name-icon {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  margin-right: 11px;
+}
+
+.monitoring-tools-item__name-icon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.monitoring-tools-item__token {
+  width: 19.68%;
+}
+
+.monitoring-tools-item__crypto {
+  width: 23.68%;
+}
+
+.monitoring-tools-item__persent {
+  width: 16.8%;
+}
+
+.monitoring-tools-item__total {
+  width: 15.52%;
+  text-align: right;
+  color: #0ecb78;
+}
+
 .inflation-proof-cash {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(67%, #133249), color-stop(67%, #ffffff));
   background: -o-linear-gradient(top, #133249 67%, #ffffff 67%);
@@ -5651,6 +5715,60 @@ button,
   width: calc((100% - 80px) / 3);
 }
 
+.monitoring-tools .center {
+  max-width: 890px;
+}
+
+.monitoring-tools .section__icons svg {
+  width: 70px;
+  height: 43px;
+}
+
+.monitoring-tools__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.monitoring-tools__text-block {
+  width: 30.68%;
+  margin-right: 30px;
+}
+
+.monitoring-tools__text-block > * + * {
+  margin-top: 28px;
+}
+
+.monitoring-tools__title {
+  font-weight: 600;
+}
+
+.monitoring-tools__table-info {
+  width: 57.71%;
+  min-width: 570px;
+  /*
+  @include vp-767 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 50px;
+
+    width: 100%;
+    min-width: auto;
+  }
+  */
+}
+
+.monitoring-tools .monitoring-tools-item + .monitoring-tools-item {
+  margin-top: 10px;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -5975,6 +6093,19 @@ button,
   .finance-products__item--sizes-8 {
     width: 129px;
     height: 27px;
+  }
+
+  .monitoring-tools-item {
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .monitoring-tools-item__name-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 7px;
   }
 
   .inflation-proof-cash__features {
@@ -6504,6 +6635,28 @@ button,
   .other-financial-tools-integrations__tools-title {
     font-size: 18px;
     line-height: 23px;
+  }
+
+  .monitoring-tools .center {
+    max-width: 590px;
+  }
+
+  .monitoring-tools .section__icons svg {
+    width: 41px;
+    height: 25px;
+  }
+
+  .monitoring-tools__text-block {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .monitoring-tools__text-block > * + * {
+    margin-top: 24px;
+  }
+
+  .monitoring-tools__table-info {
+    min-width: 487px;
   }
 }
 
@@ -7461,6 +7614,39 @@ button,
   .other-financial-tools-integrations__tools-title {
     position: static;
     margin-bottom: 40px;
+  }
+
+  .monitoring-tools {
+    position: relative;
+  }
+
+  .monitoring-tools__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: initial;
+    -ms-flex-align: initial;
+    align-items: initial;
+    -webkit-box-pack: initial;
+    -ms-flex-pack: initial;
+    justify-content: initial;
+    overflow: auto;
+  }
+
+  .monitoring-tools__text-block {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .monitoring-tools__table-info {
+    width: 100%;
+  }
+
+  .monitoring-tools .swiper-slide {
+    width: 487px;
   }
 }
 

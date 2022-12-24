@@ -1,0 +1,30 @@
+mixin monitoring-tools()
+  section.section.section--blue.monitoring-tools
+    .container
+      .center
+        .section__icons.section__icons--vertical
+          +icon("icon-eye", 70, 43)
+          .section__icons-dots
+            span
+            span
+            span
+        h2.section__title-h2 How to monitor your DeFi investments: <span>Monitoring Tools</span>
+      .content.monitoring-tools__wrapper
+        .monitoring-tools__text-block
+          h3.content.monitoring-tools__title Your Yield Guard
+          p.content.monitoring-tools__text
+            | With DeFi investments moving in real-time, you’ll want 24/7 monitoring.
+          p.content.monitoring-tools__text
+            | Trust our conservative limits or request to customize your risk tolerance, then
+            | let Poplar keep a close watch.
+          p.content.monitoring-tools__text
+            | If something changes, we’ll pull your money out.
+        .monitoring-tools__table-info
+          each item in monitoringTools
+            +monitoring-tools-item(item)
+        //-.monitoring-tools__table-info.swiper
+          .swipper-wrapper
+            .swiper-slide
+              each item in monitoringTools
+                +monitoring-tools-item(item)
+

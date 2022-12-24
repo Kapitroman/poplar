@@ -117,14 +117,51 @@ block variables
       },
     ]
 
+  -
+    const monitoringTools = [
+      {
+        icon: {path: "content/monitoring-tools", name: "aave", format: "png", width: 24, height: 24, alt: "logo monitoring tool"},
+        name: "Aave",
+        token: "USDC",
+        crypto: "Ethereum",
+        persent: "3.88%",
+        total: "$10,000.00"
+      },
+      {
+        icon: {path: "content/monitoring-tools", name: "t4350", format: "png", width: 24, height: 24, alt: "logo monitoring tool"},
+        name: "T 4350 28",
+        token: "USDC",
+        crypto: "Avalanche",
+        persent: "3.11%",
+        total: "$12,000.00"
+      },
+      {
+        icon: {path: "content/monitoring-tools", name: "polygon", format: "png", width: 24, height: 24, alt: "logo monitoring tool"},
+        name: "Polygon",
+        token: "USDC",
+        crypto: "Ethereum",
+        persent: "3.88%",
+        total: "$10,000.00"
+      },
+      {
+        icon: {path: "content/monitoring-tools", name: "avalanche", format: "png", width: 24, height: 24, alt: "logo monitoring tool"},
+        name: "Avalanche",
+        token: "USDC",
+        crypto: "Avalanche",
+        persent: "3.11%",
+        total: "$12,000.00"
+      },
+    ]
+
 block main
   main
     +poplar-yield()
     +find-your-idle-cash()
-    +how-does-poplar-help-you-earn(moneyProducts)
+    +how-does-poplar-help-you-earn()
     +live-reporting-tools()
     +your-investments()
-    +other-financial-tools-integrations(financialTools)
+    +other-financial-tools-integrations()
+    +monitoring-tools()
     +stop-warring(true)
 
 block modals
