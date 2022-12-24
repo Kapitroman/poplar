@@ -5752,17 +5752,6 @@ button,
 .monitoring-tools__table-info {
   width: 57.71%;
   min-width: 570px;
-  /*
-  @include vp-767 {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 50px;
-
-    width: 100%;
-    min-width: auto;
-  }
-  */
 }
 
 .monitoring-tools .monitoring-tools-item + .monitoring-tools-item {
