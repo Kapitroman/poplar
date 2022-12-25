@@ -1,0 +1,35 @@
+mixin api-options()
+  section.section.section--dark.api-options
+    .container
+      .center
+        h2.section__title-h2
+          | Can I offer Yield as a Service to my clients? <span>API Options</span>
+        p.section__subtitle
+          | Poplar’s full API is available for developer integrations so you can offer
+          | Yield as a Service to clients to help them profit on their idle balances.
+      .content.api-options__wrapper
+        .api-options__hey-block
+          p.api-options__hey-text
+            | “Would you like to earn a higher yield on the idle cash in this account?”
+          .api-options__hey-image
+            +picture("content/persons", "lior", "png", 90, 90, "person")
+            span
+        .api-options__options-block
+          h3.api-options__options-title Poplar’s API is Great for:
+          ul.api-options__options-list
+            li.api-options__options-item
+              +check-point().check-point--different
+              p.api-options__options-text Payroll Companies
+            li.api-options__options-item
+              +check-point().check-point--different
+              p.api-options__options-text Financial Services
+            li.api-options__options-item
+              +check-point().check-point--different
+              p.api-options__options-text Payment Companies
+            li.api-options__options-item
+              +check-point().check-point--different
+              p.api-options__options-text Business Transactions Services
+            li.api-options__options-item
+              +check-point().check-point--different
+              p.api-options__options-text Banks
+
