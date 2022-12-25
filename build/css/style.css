@@ -5758,6 +5758,106 @@ button,
   margin-top: 10px;
 }
 
+.working-capital-automation-options .section__title-h3 {
+  margin-bottom: 50px;
+}
+
+.working-capital-automation-options__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.working-capital-automation-options__invest-features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 51.02%;
+  margin-right: 8.81%;
+}
+
+.working-capital-automation-options__invest-describe {
+  width: 40.17%;
+}
+
+.working-capital-automation-options__features {
+  width: 100%;
+}
+
+.working-capital-automation-options__person {
+  position: relative;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 130px;
+  height: 130px;
+}
+
+.working-capital-automation-options__person img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.working-capital-automation-options__person span {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  background-color: #0ecb78;
+}
+
+.working-capital-automation-options__feature {
+  position: relative;
+  width: 80.5084745763%;
+  margin: 0;
+  margin-left: 19.4915254237%;
+  padding: 20px 40px;
+  border-radius: 25px;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #133249;
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(18, 49, 73, 0.2);
+  box-shadow: 0px 5px 10px 0px rgba(18, 49, 73, 0.2);
+}
+
+.working-capital-automation-options__feature::before {
+  content: "";
+  position: absolute;
+  bottom: -18px;
+  left: 54px;
+  width: 26px;
+  height: 18px;
+  background-image: url("../img/svg/triangle.svg");
+}
+
+.working-capital-automation-options__feature span {
+  color: #0ecb78;
+}
+
+.working-capital-automation-options__feature:first-child,
+.working-capital-automation-options__feature:last-child {
+  -webkit-transform: translateX(-142px);
+  -ms-transform: translateX(-142px);
+  transform: translateX(-142px);
+}
+
+.working-capital-automation-options .working-capital-automation-options__feature + .working-capital-automation-options__feature {
+  margin-top: 87px;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -6646,6 +6746,52 @@ button,
 
   .monitoring-tools__table-info {
     min-width: 487px;
+  }
+
+  .working-capital-automation-options__invest-features {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .working-capital-automation-options__features {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .working-capital-automation-options__person {
+    margin-bottom: 40px;
+  }
+
+  .working-capital-automation-options__feature {
+    margin-left: 0;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .working-capital-automation-options__feature:first-child,
+  .working-capital-automation-options__feature:last-child {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+
+  .working-capital-automation-options .working-capital-automation-options__feature + .working-capital-automation-options__feature {
+    margin-top: 48px;
+  }
+
+  .working-capital-automation-options .section__subtitle {
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 
@@ -7637,6 +7783,33 @@ button,
   .monitoring-tools .swiper-slide {
     width: 487px;
   }
+
+  .working-capital-automation-options .section__title-h3 {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .working-capital-automation-options__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .working-capital-automation-options__invest-features {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 68px;
+  }
+
+  .working-capital-automation-options__invest-describe {
+    width: 100%;
+  }
+
+  .working-capital-automation-options__feature {
+    width: 100%;
+    min-height: 80px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -7751,6 +7924,11 @@ button,
 
   .losing-billions-in-free-money__background {
     right: 20px;
+  }
+
+  .working-capital-automation-options__feature {
+    min-height: 110px;
+    padding: 25px 40px;
   }
 }
 
