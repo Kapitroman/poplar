@@ -1,0 +1,20 @@
+mixin portfolio-builder-tool()
+  section.section.section--light.portfolio-builder-tool
+    .container
+      .portfolio-builder-tool__wrapper
+        .portfolio-builder-tool__title
+          h2.section__title-h2 See a <span>demo</span> of your earnings: The Portfolio Builder Tool
+          p.section__subtitle
+              | Build smart portfolios based on your risk tolerance and
+              | liquidity needs. Let Poplar guide your strategy or build
+              | your portfolio manually.
+          +btn({
+            text: "Open a free account"
+          })
+        .portfolio-builder-tool__image-block
+          .portfolio-builder-tool__images
+            .portfolio-builder-tool__image
+              +picture("content/screens", "portfolio-builder-tool-1", "png", 494, 270, "screen portfolio builder tool")
+            .portfolio-builder-tool__image
+              +picture("content/screens", "portfolio-builder-tool-2", "png", 494, 270, "screen portfolio builder tool")
+          .portfolio-builder-tool__background

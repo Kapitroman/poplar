@@ -5858,6 +5858,59 @@ button,
   margin-top: 87px;
 }
 
+.portfolio-builder-tool {
+  position: relative;
+}
+
+.portfolio-builder-tool__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.portfolio-builder-tool__title {
+  width: 44.66%;
+  margin-right: 13.47%;
+}
+
+.portfolio-builder-tool__image-block {
+  width: 41.86%;
+  padding: 4.75% 0;
+}
+
+.portfolio-builder-tool__background {
+  position: absolute;
+  right: 0;
+  left: 65.69%;
+  top: 130px;
+  bottom: 130px;
+  border-radius: 45px 0 0 45px;
+  background-color: #133249;
+}
+
+.portfolio-builder-tool__images {
+  position: relative;
+  z-index: 1;
+}
+
+.portfolio-builder-tool__image {
+  aspect-ratio: 494/270;
+}
+
+.portfolio-builder-tool__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.portfolio-builder-tool .portfolio-builder-tool__image + .portfolio-builder-tool__image {
+  margin-top: 30px;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -7810,6 +7863,39 @@ button,
     width: 100%;
     min-height: 80px;
   }
+
+  .portfolio-builder-tool__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: initial;
+    -ms-flex-align: initial;
+    align-items: initial;
+  }
+
+  .portfolio-builder-tool__title {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+
+  .portfolio-builder-tool__image-block {
+    width: 250px;
+    padding: 13px 0;
+  }
+
+  .portfolio-builder-tool__background {
+    bottom: 50px;
+    top: auto;
+    left: 30%;
+    height: 314px;
+    border-radius: 20px 0 0 20px;
+  }
+
+  .portfolio-builder-tool .portfolio-builder-tool__image + .portfolio-builder-tool__image {
+    margin-top: 14px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -7929,6 +8015,10 @@ button,
   .working-capital-automation-options__feature {
     min-height: 110px;
     padding: 25px 40px;
+  }
+
+  .portfolio-builder-tool__background {
+    left: 20%;
   }
 }
 
