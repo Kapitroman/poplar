@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-import {CustomSelect} from './modules/select/custom-select';
+// import {CustomSelect} from './modules/select/custom-select';
 import {initBurgerMenu} from './modules/init-burger-menu';
 import {initSliderAmountCash} from './modules/init-slider-amount-cash';
 import {initMoneyCalculatorPeriodsSwiper} from './modules/init-money-calculator-periods-swiper';
@@ -24,8 +24,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initModals();
-    const select = new CustomSelect();
-    select.init();
+    // const select = new CustomSelect();
+    // select.init();
     const form = new Form();
     window.form = form;
     form.init();

@@ -261,7 +261,6 @@ export class Validator {
   validateForm(form) {
     const validateItems = form.querySelectorAll('[data-validate-type]');
     const result = this._fullValidate(validateItems);
-    console.log(result);
     return result;
   }
 }

@@ -95,7 +95,7 @@
     color: $color-default-white;
 
     background-color: $color-blue-whale-2;
-    box-shadow: 0px 5px 10px 0px rgba($color-blue-whale, 0.2);
+    box-shadow: 0 5px 10px 0 rgba($color-blue-whale, 0.2);
 
     @include vp-1023 {
       margin-left: 0;

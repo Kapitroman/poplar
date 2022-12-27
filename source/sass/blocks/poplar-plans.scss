@@ -73,7 +73,7 @@
     border-radius: 35px;
 
     background-color: $color-default-white;
-    box-shadow: 0px 0px 10px rgba(19, 50, 73, 0.1);
+    box-shadow: 0 0 10px rgba(19, 50, 73, 0.1);
 
     @include vp-1023 {
       border-radius: 30px;

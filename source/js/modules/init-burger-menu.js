@@ -13,7 +13,7 @@ const initBurgerMenu = () => {
     if (menuNav.style.height !== '0px') {
       menuNav.style.setProperty('height', 'auto');
     }
-  }
+  };
 
   const closeMenu = () => {
     menuToggle.setAttribute('aria-expanded', false);

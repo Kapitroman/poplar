@@ -17,7 +17,7 @@
     color: $color-blue-whale;
     text-transform: capitalize;
 
-    @include vp-1023 {//
+    @include vp-1023 {
       font-size: 25px;
       line-height: 31px;
     }
@@ -37,7 +37,7 @@
     color: $color-blue-whale;
     text-transform: capitalize;
 
-    @include vp-1023 {//
+    @include vp-1023 {
       font-size: 20px;
       line-height: 25px;
     }
@@ -53,7 +53,7 @@
     font-family: $ff-montserrat;
     font-weight: 500;
 
-    @include vp-1023 {//
+    @include vp-1023 {
       font-size: 14px;
       line-height: 20px;
     }
@@ -72,7 +72,7 @@
     text-transform: uppercase;
     color: $color-slate-grey;
 
-    @include vp-1023 {//
+    @include vp-1023 {
       font-size: 12px;
       line-height: 20px;
     }
@@ -89,7 +89,7 @@
     margin-right: 30px;
     margin-left: 30px;
 
-    @include vp-1023 {//
+    @include vp-1023 {
       margin-right: 11px;
       margin-left: 11px;
     }
@@ -101,7 +101,7 @@
 
       background-color: $color-mountain-meadow;
 
-      @include vp-1023 {//
+      @include vp-1023 {
         width: 2px;
         height: 2px;
       }
@@ -110,7 +110,7 @@
     span + span {
       margin-left: 9px;
 
-      @include vp-1023 {//
+      @include vp-1023 {
         margin-left: 3px;
       }
     }
@@ -126,7 +126,7 @@
       margin-left: 0;
       margin-right: 0;
 
-      @include vp-1023 {//
+      @include vp-1023 {
         margin-top: 12px;
       }
 
@@ -134,7 +134,7 @@
         margin-left: 0;
         margin-top: 9px;
 
-        @include vp-1023 {//
+        @include vp-1023 {
           margin-top: 3px;
         }
       }

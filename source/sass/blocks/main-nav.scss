@@ -65,8 +65,6 @@
   .is-open-menu {
     .main-nav {
       display: flex;
-
-      //transition: height 0.6s ease-out;
     }
 
     .main-nav__list {
@@ -84,6 +82,5 @@
         color: $color-mountain-meadow;
       }
     }
-
   }
 }

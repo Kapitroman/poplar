@@ -20,11 +20,11 @@ const initSliderAmountCash = () => {
       values: [10, 500],
       density: 4,
       format: wNumb({
-          decimals: 0,
-          prefix: '$',
-          suffix: 'k'
-      })
-    }
+        decimals: 0,
+        prefix: '$',
+        suffix: 'k',
+      }),
+    },
   });
 };
 

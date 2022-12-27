@@ -42,18 +42,21 @@ block main
       margin-bottom: 0;
     }
 
-    .container > section {
+    .container > section,
+    .container + section {
       padding: 70px 0 0 0;
     }
 
-    section > h2 {
+    section > h2,
+    .container > h2 {
       margin: 0 0 20px 0;
       padding: 20px 0;
       position: relative;
       color: #ffffff;
     }
 
-    section > h2::before {
+    section > h2::before,
+    .container > h2::before {
       content: "";
       position: absolute;
       height: 100%;
@@ -119,22 +122,30 @@ block main
         span вернуться на разводящую
       ul.header-ui__inner-list
         li.header-ui__inner-item
+          a.header-ui__inner-link(href="#header", data-navigation-link) Header
+        li.header-ui__inner-item
           a.header-ui__inner-link(href="#modals", data-navigation-link) Modals
         li.header-ui__inner-item
           a.header-ui__inner-link(href="#buttons", data-navigation-link) Buttons
         li.header-ui__inner-item
           a.header-ui__inner-link(href="#form-elements", data-navigation-link) Form elements
-
+        li.header-ui__inner-item
+          a.header-ui__inner-link(href="#footer", data-navigation-link) Footer
   main
     .container
       h1 UI-kit
       //- все модалки проекта добавляем сюда, для удобства тестирования
+    section(id="header")
+      .container
+        h2 Header
+      +header(headerMods, currentUrl)
+
+    .container
+
       section(id="modals")
         h2 Modals
         p
           +btn({text: "modal-feedback"})(data-open-modal="feedback")
-        p
-          +btn({text: "modal-success"})(data-open-modal="success")
 
       section(id="buttons")
         h2 Buttons
@@ -206,32 +217,14 @@ block main
                 inputChecked: false
               })(data-validate-type="checkbox", data-message-base="Поле обязательно к заполнению").custom-toggle--checkbox
             hr
-            p Селект простой с выбранной опцией.
-            +custom-select({
-              optionsList: [
-                {text: "Тема 1", value: "id-1", isActive: true},
-                {text: "Тема 2", value: "id-2"},
-                {text: "Тема 3", value: "id-3"},
-                {text: "Тема 4", value: "id-4"},
-                {text: "Тема 5", value: "id-5"},
-                {text: "Тема 6", value: "id-6"}
-              ]
-            })("data-select", data-validate-type="select", data-name="some-name", data-id="id-example-1", data-message-base="Поле обязательно к заполнению").custom-select
-            p Селект простой без выбранной опции.
-            +custom-select({
-              optionsList: [
-                {text: "Тема 1", value: "id-1"},
-                {text: "Тема 2", value: "id-2"},
-                {text: "Тема 3", value: "id-3"},
-                {text: "Тема 4", value: "id-4"},
-                {text: "Тема 5", value: "id-5"},
-                {text: "Тема 6", value: "id-6"}
-              ]
-            })("data-select", data-validate-type="select", data-name="some-name", data-id="id-example-2", data-message-base="Поле обязательно к заполнению").custom-select
-            hr
 
             +btn({text: "Сбросить форму", type: "reset"})
             +btn({text: "Отправить форму", type: "submit"})
+
+    section(id="footer")
+      .container
+        h2 Footer
+      +footer(footerMods)
 
   script
     include ../../js/inline/ui-kit.js
@@ -239,5 +232,3 @@ block main
 block modals
   +modal("modal--feedback")(data-modal="feedback")
     +modal-feedback()
-  +modal("modal--success modal--no-scale modal--fit-content")(data-modal="success")
-    +modal-success()

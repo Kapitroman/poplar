@@ -1,13 +1,12 @@
-const breakpoint = window.matchMedia(`(min-width: 768px)`);
+const breakpoint = window.matchMedia('(min-width: 768px)');
 const moneyCalculatorPeriodsSwiper = document.querySelector('.momey-calculator-periods');
 let swiper;
 
 const initSwiper = (slider) => {
   // eslint-disable-next-line no-undef
-
   swiper = new Swiper(slider, {
     speed: 600,
-    slidesPerView: "auto",
+    slidesPerView: 'auto',
   });
 };
 
