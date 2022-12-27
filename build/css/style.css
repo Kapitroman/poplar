@@ -2334,20 +2334,39 @@ button,
   position: relative;
   width: 600px;
   padding: 40px;
-  background-color: #ffffff;
+  border-radius: 25px;
+  text-align: center;
+  background-color: #0ecb78;
+  color: #ffffff;
 }
 
 .modal__close-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: absolute;
-  top: 22px;
-  right: 22px;
+  top: 12px;
+  right: 12px;
   z-index: 1;
   width: 40px;
   height: 40px;
   padding: 0;
+  border-radius: 50%;
+  border: 1px solid #637b8b;
   background: rgba(255, 255, 255, 0);
-  border: none;
   cursor: pointer;
+}
+
+.modal__close-btn svg {
+  display: block;
+  width: 15px;
+  height: 15px;
 }
 
 .modal--responsive .modal__content {
@@ -2377,6 +2396,10 @@ button,
   visibility: visible;
   opacity: 1;
   pointer-events: auto;
+}
+
+.modal--not-success-send-message .modal__content {
+  background-color: #ec3b46;
 }
 
 .btn {
@@ -2478,7 +2501,7 @@ button,
   position: absolute;
   right: 0;
   bottom: 35px;
-  color: #ff1553;
+  color: #ec3b46;
   opacity: 0;
   -webkit-transition: opacity 0.3s ease;
   -o-transition: opacity 0.3s ease;
@@ -2489,7 +2512,7 @@ button,
 .custom-input.is-invalid textarea,
 .custom-textarea.is-invalid input,
 .custom-textarea.is-invalid textarea {
-  border: 1px solid #ff1553;
+  border: 1px solid #ec3b46;
 }
 
 .custom-input.is-invalid input:focus,
@@ -2500,19 +2523,19 @@ button,
 .custom-textarea.is-invalid input:hover,
 .custom-textarea.is-invalid textarea:focus,
 .custom-textarea.is-invalid textarea:hover {
-  border: 1px solid rgba(255, 21, 83, 0.5);
+  border: 1px solid rgba(236, 59, 70, 0.5);
 }
 
 .custom-input.is-valid input,
 .custom-textarea.is-valid input {
-  border: 1px solid #22b259;
+  border: 1px solid #0ecb78;
 }
 
 .custom-input.is-valid input:focus,
 .custom-input.is-valid input:hover,
 .custom-textarea.is-valid input:focus,
 .custom-textarea.is-valid input:hover {
-  border: 1px solid rgba(34, 178, 89, 0.5);
+  border: 1px solid rgba(14, 203, 120, 0.5);
 }
 
 .custom-input .input-message,
@@ -2524,12 +2547,12 @@ button,
 
 .custom-input .input-message--invalid,
 .custom-textarea .input-message--invalid {
-  color: #ff0000;
+  color: #ec3b46;
 }
 
 .custom-input .input-message--valid,
 .custom-textarea .input-message--valid {
-  color: #15ab07;
+  color: #0ecb78;
 }
 
 .custom-toggle {
@@ -7152,8 +7175,8 @@ button,
   }
 
   .modal__content {
-    width: 100%;
-    padding: 20px;
+    width: 75%;
+    padding: 40px;
   }
 
   .modal--fit-content .modal__content {

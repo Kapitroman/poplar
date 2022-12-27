@@ -11,23 +11,24 @@ mixin poplar-yield()
             href: "#",
             text: "Open a free account"
           })
-        .poplar-yield__form
+        .poplar-yield__form(data-form-validate="", data-callback="sendMessage")
+          //-.poplar-yield__form(data-form-validate="")
           form(action="#", method="get")
             +custom-input({
               inputLabel: "First and Last Name:",
               inputName: "person-name",
-            })
+            })(data-validate-type="text", data-required="")
             +custom-input({
               inputLabel: "Email:",
               inputName: "email",
               inputType: "email"
-            })
+            })(data-validate-type="email", data-required="")
             +custom-input({
               inputLabel: "Company:",
               inputName: "person-company",
             })
             +btn({
-              href: "#",
+              type: "submit",
               text: "contact me"
             }).poplar-yield__button
             p.poplar-yield__note
