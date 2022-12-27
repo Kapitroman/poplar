@@ -20,5 +20,6 @@ mixin monitoring-tools()
           p.content.monitoring-tools__text
             | If something changes, we’ll pull your money out.
         .monitoring-tools__table-info
-          each item in monitoringTools
-            +monitoring-tools-item(item)
+          .monitoring-tools__table-info-wrapper
+            each item in monitoringTools
+              +monitoring-tools-item(item)

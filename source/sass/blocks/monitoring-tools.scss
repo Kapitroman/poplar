@@ -32,8 +32,6 @@
       flex-direction: column;
       align-items: initial;
       justify-content: initial;
-
-      overflow: auto;
     }
   }
 
@@ -71,18 +69,21 @@
     width: 57.71%;
     min-width: 570px;
 
+
     @include vp-1023 {
       min-width: 487px;
     }
 
     @include vp-767 {
       width: 100%;
+      min-width: initial;
+      overflow: auto;
     }
   }
 
-  .swiper-slide {
+  &__table-info-wrapper {
     @include vp-767 {
-      width: 487px;
+      min-width: 487px;
     }
   }
 
