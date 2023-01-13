@@ -1,6 +1,6 @@
 mixin get-free-idle-cash-report()
   section.section.section--light.get-free-idle-cash-report
-    .get-free-idle-cash-report__background
+    .get-free-idle-cash-report__background.lazy(data-bg="./img/content/backgrounds/background-report.png" data-bg-hidpi="./img/content/backgrounds/background-report@2x.png")
     .container
       .get-free-idle-cash-report__wrapper
         .mobil-center
@@ -20,6 +20,6 @@ mixin get-free-idle-cash-report()
           })
         .get-free-idle-cash-report__images
           .get-free-idle-cash-report__image
-            +picture("content/screens", "screen-idle-cash", "png", 522, 242, "screen 'Idle cash'")
+            +picture("content/screens", "screen-idle-cash", "png", 522, 242, "screen 'Idle cash'", true)
           .get-free-idle-cash-report__image
-            +picture("content/screens", "screen-quick-withdrawal", "png", 522, 242, "screen 'Quick Withdrawal'")
+            +picture("content/screens", "screen-quick-withdrawal", "png", 522, 242, "screen 'Quick Withdrawal'", true)

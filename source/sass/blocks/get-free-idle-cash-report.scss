@@ -11,13 +11,13 @@
 
     background-color: $color-alice-blue;
 
-    background-image: url("../img/content/backgrounds/background-report.png");
+    //background-image: url("../img/content/backgrounds/background-report.png");
     background-position: left 0 bottom 0;
     background-repeat: no-repeat;
     background-size: 100% 64.2%;
 
     @include retina {
-      background-image: url("../img/content/backgrounds/background-report@2x.png");
+      //background-image: url("../img/content/backgrounds/background-report@2x.png");
     }
 
     @include vp-1023 {

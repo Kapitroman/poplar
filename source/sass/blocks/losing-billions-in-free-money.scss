@@ -50,13 +50,13 @@
     border-radius: 0 45px 45px 0;
 
     background-color: $color-alice-blue-2;
-    background-image: url("../img/content/backgrounds/background-idle-cash-to-work.png");
+    //background-image: url("../img/content/backgrounds/background-idle-cash-to-work.png");
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 100% 100%;
 
     @include retina {
-      background-image: url("../img/content/backgrounds/background-idle-cash-to-work@2x.png");
+      //background-image: url("../img/content/backgrounds/background-idle-cash-to-work@2x.png");
     }
 
     @include vp-1023 {

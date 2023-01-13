@@ -1,4 +1,9 @@
-mixin picture(path, image, format, width, height, altText)
-  picture(class!=attributes.class)
-    source(type='image/webp', srcset="img/" + path + "/" + image + ".webp" + ", " + "img/" + path + "/" + image + "@2x.webp" + " 2x")
-    img(src="img/" + path + "/" + image + "." + format, srcset= "img/" + path + "/" + image + "@2x." + format + " 2x", width= width, height= height, alt= altText)
+mixin picture(path, image, format, width, height, altText, isLazy)
+  if(isLazy)
+    picture
+      source(srcset="img/content/low-quality-3x3.jpg", data-srcset="img/" + path + "/" + image + ".webp" + ", " + "img/" + path + "/" + image + "@2x.webp" + " 2x", type="image/webp")
+      img.lazy(src="img/content/low-quality-3x3.jpg", data-src="img/" + path + "/" + image + "." + format, data-srcset= "img/" + path + "/" + image + "@2x." + format + " 2x", width= width, height= height, alt= altText)
+  else
+    picture(class!=attributes.class)
+      source(type='image/webp', srcset="img/" + path + "/" + image + ".webp" + ", " + "img/" + path + "/" + image + "@2x.webp" + " 2x")
+      img(src="img/" + path + "/" + image + "." + format, srcset= "img/" + path + "/" + image + "@2x." + format + " 2x", width= width, height= height, alt= altText)

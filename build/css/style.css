@@ -4476,7 +4476,6 @@ button,
   height: calc(100% - 260px);
   border-radius: 0 60px 60px 0;
   background-color: #f3f6fa;
-  background-image: url("../img/content/backgrounds/background-report.png");
   background-position: left 0 bottom 0;
   background-repeat: no-repeat;
   background-size: 100% 64.2%;
@@ -4547,7 +4546,6 @@ button,
 }
 
 .business-owners {
-  background-image: url("../img/content/backgrounds/background-owners.png");
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: 100%;
@@ -5566,7 +5564,6 @@ button,
   height: 450px;
   border-radius: 0 45px 45px 0;
   background-color: #e8f3ff;
-  background-image: url("../img/content/backgrounds/background-idle-cash-to-work.png");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 100% 100%;
@@ -8295,19 +8292,5 @@ button,
 
   .investing-is-full-time-job__item-help:hover:not(.focus-visible) {
     opacity: 0.8;
-  }
-}
-
-@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .get-free-idle-cash-report__background {
-    background-image: url("../img/content/backgrounds/background-report@2x.png");
-  }
-
-  .business-owners {
-    background-image: url("../img/content/backgrounds/background-owners@2x.png");
-  }
-
-  .losing-billions-in-free-money__background {
-    background-image: url("../img/content/backgrounds/background-idle-cash-to-work@2x.png");
   }
 }

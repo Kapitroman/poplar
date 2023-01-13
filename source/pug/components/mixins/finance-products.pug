@@ -4,4 +4,4 @@ mixin finance-products(title, products)
     .finance-products__list
       each item in products
         a(class = `finance-products__item finance-products__item--${item.addClass}`, href="#")
-          +picture(item.path, item.name, item.format, item.width, item.height, item.alt)
+          +picture(item.path, item.name, item.format, item.width, item.height, item.alt, true)

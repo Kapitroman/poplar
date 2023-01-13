@@ -8,7 +8,7 @@ mixin card-review(data = {})
     p.card-review__text= text
     .card-review__author
       .card-review__author-image
-        +picture(image[0], image[1], image[3], 70, 70, "photo person")
+        +picture(image[0], image[1], image[2], 70, 70, "photo person", true)
       .card-review__author-info
         p.card-review__author-name= name
         p.card-review__author-company= company

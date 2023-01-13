@@ -1,5 +1,5 @@
 .business-owners {
-  background-image: url("../img/content/backgrounds/background-owners.png");
+  //background-image: url("../img/content/backgrounds/background-owners.png");
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: 100%;
@@ -9,7 +9,7 @@
   }
 
   @include retina {
-    background-image: url("../img/content/backgrounds/background-owners@2x.png");
+    //background-image: url("../img/content/backgrounds/background-owners@2x.png");
   }
 
   .section__title-h2 {
